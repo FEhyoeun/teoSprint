@@ -11,7 +11,8 @@ export const router = createBrowserRouter([
     element: <Root />,
     children: [
       {
-        path: '/:bookmark',
+        path: '/',
+        // path: '/:bookmark', // TODO: 리액트 라우터가 bookmark가 category일 때 children을 랜더링하는 것이 아니라 본인을 가르키고 있는 것으로 보임
         element: <Layout />,
         children: [
           {
