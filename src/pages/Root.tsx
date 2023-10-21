@@ -12,7 +12,9 @@ const Wrapper = styled.div`
   width: 100vw;
   max-height: 700px;
   height: 100vh;
-  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const Root = () => {
@@ -26,7 +28,6 @@ export const Root = () => {
       navigate('/profile');
     }
   }, [navigate]);
-
   return (
     <Container>
       <Wrapper>

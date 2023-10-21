@@ -18,6 +18,10 @@ export const router = createBrowserRouter([
             path: 'category',
             element: <Category />,
           },
+          {
+            path: 'album',
+            element: <h4>Album</h4>,
+          },
         ],
       },
       {
