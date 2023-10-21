@@ -1,8 +1,8 @@
-import { useState } from 'react';
-import { CategoryItem } from '../components/category/CategoryItem';
+import React, { useState } from 'react';
 import { data } from '../components/category/mock.json';
-import { Outlet } from 'react-router-dom';
+import { Outlet, useNavigate } from 'react-router-dom';
 import styled from '@emotion/styled';
+import { PATH } from '../constants/path';
 
 const StyledCategory = styled.div`
   width: 100%;
@@ -14,16 +14,40 @@ const StyledCategory = styled.div`
   flex-wrap: wrap;
 `;
 
+const StyledCategoryItem = styled.input`
+  border-radius: 5px;
+  width: 150px;
+  height: 180px;
+  cursor: pointer;
+`;
+
 export const Category = () => {
-  const [category, setCategory] = useState(data);
+  const [category, setCategory] = useState<string | null>(null);
+  const navigate = useNavigate();
+
+  const handleCateogryClick = (category: string) => {
+    navigate(`/${PATH.CATEGORIES}/${category}`);
+    setCategory(category);
+  };
+
+  if (category) {
+    return (
+      <StyledCategory>
+        <Outlet />
+      </StyledCategory>
+    );
+  }
 
   return (
-    <>
-      <StyledCategory>
-        {category.map((c) => (
-          <CategoryItem key={c.index} categoryName={c.categoryName} imgUrl={c.imgUrl} />
-        ))}
-      </StyledCategory>
-    </>
+    <StyledCategory>
+      {data.map((c) => (
+        <StyledCategoryItem
+          type="image"
+          src={c.imgUrl}
+          key={c.categoryName}
+          onClick={() => handleCateogryClick(c.categoryName)}
+        />
+      ))}
+    </StyledCategory>
   );
 };
