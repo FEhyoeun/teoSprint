@@ -5,7 +5,6 @@ import { Outlet } from 'react-router-dom';
 
 export const Category = () => {
   const [category, setCategory] = useState(data);
-  console.log('category', category);
 
   return (
     <>
