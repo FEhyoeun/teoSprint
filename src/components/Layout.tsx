@@ -68,5 +68,5 @@ const HomeLogo = styled(Link)`
 const OutletWrapper = styled.section<{ param: string }>`
   grid-column: 1/2;
   grid-row: 2/3;
-  background-color: ${(props) => (props.param === 'category' ? _mainCol300 : _mainCol400)};
+  background-color: ${(props) => (props.param === PATH.CATEGORIES ? _mainCol300 : _mainCol400)};
 `;
