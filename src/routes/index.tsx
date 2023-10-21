@@ -3,6 +3,7 @@ import { createBrowserRouter } from 'react-router-dom';
 
 import { Root } from '../pages/Root';
 import { Layout } from '../components/Layout';
+import { Categories } from '../pages/Categories';
 import { Category } from '../pages/Category';
 import Profile from '../pages/Profile';
 
@@ -20,7 +21,13 @@ export const router = createBrowserRouter([
         children: [
           {
             path: `/${PATH.CATEGORIES}`,
-            element: <Category />,
+            element: <Categories />,
+            children: [
+              {
+                path: `/${PATH.CATEGORIES}/:category`,
+                element: <Category />,
+              },
+            ],
           },
           {
             path: `/${PATH.ALBUM}`,
