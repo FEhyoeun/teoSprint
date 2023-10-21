@@ -8,7 +8,7 @@ export default function SideNavBar() {
         <ul>
           {categoryData.data.map((category) => (
             <li>
-              <Link to={`${category.index}`}>{category.categoryName}</Link>
+              <Link to={`${category.index}`}>{category.icon}</Link>
             </li>
           ))}
         </ul>
