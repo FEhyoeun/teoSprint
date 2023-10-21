@@ -4,8 +4,8 @@
   "tabWidth": 2,
   "printWidth": 100,
   "semi": true,
-    "bracketSameLine": false, // 닫는 괄호('>')를 같은 줄에 넣을까요 말까요
-  "bracketSpacing": true, // 객체 리터럴에서 괄호에 공백 삽입 여부 { }
+    "bracketSameLine": false,
+  "bracketSpacing": true,
   "importOrder": [
     "^react(.)",
     "^@tanstack/(.)$",
@@ -20,6 +20,6 @@
     "^@styles/(.)$",
     "^[./]"
   ],
-  "importOrderSeparation": false, //import하는 경로 별칭마다 공백 줄지 말지
-  "importOrderSortSpecifiers": true //import 경로 별칭별로 정렬할지 말지
+  "importOrderSeparation": false,
+  "importOrderSortSpecifiers": true
 }
