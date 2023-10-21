@@ -2,7 +2,7 @@ import { Link, Outlet } from 'react-router-dom';
 import SideNavBar from './navBars/SideNavBar';
 import TopNavBar from './navBars/TopNavBar';
 import styled from '@emotion/styled';
-import { _mainColBg } from '../constants/colors';
+import { _mainCol200, _mainCol300, _mainColBg } from '../constants/colors';
 import { _mainHeight, _mainWidth } from '../constants/sizes';
 
 export const Layout = () => {
@@ -56,4 +56,5 @@ const HomeLogo = styled(Link)`
 const OutletWrapper = styled.section`
   grid-column: 1/2;
   grid-row: 2/3;
+  background-color: ${_mainCol300};
 `;
