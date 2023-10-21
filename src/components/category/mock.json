@@ -3,42 +3,50 @@
     {
       "index": 0,
       "categoryName": "동물",
-      "icon": "🐕"
+      "icon": "🐕",
+      "imgUrl": "https://images.pexels.com/photos/2558605/pexels-photo-2558605.jpeg?cs=srgb&dl=pexels-chevon-rossouw-2558605.jpg&fm=jpg"
     },
     {
       "index": 1,
       "categoryName": "사물",
-      "icon": "🪑"
+      "icon": "🪑",
+      "imgUrl": "https://images.pexels.com/photos/2558605/pexels-photo-2558605.jpeg?cs=srgb&dl=pexels-chevon-rossouw-2558605.jpg&fm=jpg"
     },
     {
       "index": 2,
       "categoryName": "가족",
-      "icon": "👪"
+      "icon": "👪",
+      "imgUrl": "https://images.pexels.com/photos/2558605/pexels-photo-2558605.jpeg?cs=srgb&dl=pexels-chevon-rossouw-2558605.jpg&fm=jpg"
     },
     {
       "index": 3,
       "categoryName": "색깔",
-      "icon": "🎨"
+      "icon": "🎨",
+      "imgUrl": "https://images.pexels.com/photos/2558605/pexels-photo-2558605.jpeg?cs=srgb&dl=pexels-chevon-rossouw-2558605.jpg&fm=jpg"
     },
     {
       "index": 4,
       "categoryName": "감정",
-      "icon": "😄"
+      "icon": "😄",
+      "imgUrl": "https://images.pexels.com/photos/2558605/pexels-photo-2558605.jpeg?cs=srgb&dl=pexels-chevon-rossouw-2558605.jpg&fm=jpg"
     },
     {
       "index": 5,
       "categoryName": "날씨",
-      "icon": "☀️"
+      "icon": "☀️",
+      "imgUrl": "https://images.pexels.com/photos/2558605/pexels-photo-2558605.jpeg?cs=srgb&dl=pexels-chevon-rossouw-2558605.jpg&fm=jpg"
     },
     {
       "index": 6,
       "categoryName": "숫자",
-      "icon": "🔢"
+      "icon": "🔢",
+      "imgUrl": "https://images.pexels.com/photos/2558605/pexels-photo-2558605.jpeg?cs=srgb&dl=pexels-chevon-rossouw-2558605.jpg&fm=jpg"
     },
     {
       "index": 7,
       "categoryName": "음식",
-      "icon": "🍽️"
+      "icon": "🍽️",
+      "imgUrl": "https://images.pexels.com/photos/2558605/pexels-photo-2558605.jpeg?cs=srgb&dl=pexels-chevon-rossouw-2558605.jpg&fm=jpg"
     }
   ]
 }
