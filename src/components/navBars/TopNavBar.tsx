@@ -1,31 +1,35 @@
 import { Link } from 'react-router-dom';
+import styled from '@emotion/styled';
+import { _mainCol300 } from '../../constants/colors';
 
-const topNavigations = [
-  {
-    id: 'vocalist',
-    name: '단어장',
-  },
-  {
-    id: 'album',
-    name: '단어장',
-  },
-];
 export default function TopNavBar() {
   return (
-    <div>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/category">단어장</Link>
-          </li>
-          <li>
-            <Link to="/album">앨범</Link>
-          </li>
-          <li>
-            <Link to="/emergency ">비상연락망</Link>
-          </li>
-        </ul>
-      </nav>
-    </div>
+    <NavWrapper>
+      <UlWrapper>
+        <ListWrapper>
+          <Link to="/category">단어장</Link>
+        </ListWrapper>
+        <ListWrapper>
+          <Link to="/album">앨범</Link>
+        </ListWrapper>
+      </UlWrapper>
+    </NavWrapper>
   );
 }
+
+const NavWrapper = styled.nav`
+  display: flex;
+`;
+const UlWrapper = styled.nav`
+  display: flex;
+`;
+
+const ListWrapper = styled.div`
+  width: 10rem;
+  height: 3rem;
+  background-color: ${_mainCol300};
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0.5rem;
+`;
