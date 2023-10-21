@@ -1,10 +1,17 @@
 import { CategoryItem as CategoryItemType } from '../../types/CategoryItem';
+import styled from '@emotion/styled';
 
-export const CategoryItem = ({ index, categoryName }: CategoryItemType) => {
+const StyledCategoryItem = styled.img`
+  border-radius: 5px;
+  width: 150px;
+  height: 180px;
+  cursor: pointer;
+`;
+
+export const CategoryItem = ({ index, categoryName, imgUrl }: CategoryItemType) => {
   return (
     <>
-      <h1>{index}</h1>
-      <div>{categoryName}</div>
+      <StyledCategoryItem src={imgUrl}></StyledCategoryItem>
     </>
   );
 };
