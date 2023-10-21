@@ -1,0 +1,36 @@
+{
+  "data": [
+    {
+      "index": 0,
+      "categoryName": "동물"
+    },
+    {
+      "index": 1,
+      "categoryName": "사물"
+    },
+    {
+      "index": 2,
+      "categoryName": "가족"
+    },
+    {
+      "index": 3,
+      "categoryName": "색깔"
+    },
+    {
+      "index": 4,
+      "categoryName": "감정"
+    },
+    {
+      "index": 5,
+      "categoryName": "날씨"
+    },
+    {
+      "index": 6,
+      "categoryName": "숫자"
+    },
+    {
+      "index": 7,
+      "categoryName": "음식"
+    }
+  ]
+}
