@@ -1,10 +1,13 @@
 import React from 'react';
+import styled from '@emotion/styled';
 import { Link, Outlet, useLocation } from 'react-router-dom';
+
 import SideNavBar from './navBars/SideNavBar';
 import TopNavBar from './navBars/TopNavBar';
-import styled from '@emotion/styled';
-import { _mainCol300, _mainCol400, _mainColBg } from '../constants/colors';
+
 import { _mainHeight, _mainWidth } from '../constants/sizes';
+import { _mainCol300, _mainCol400, _mainColBg } from '../constants/colors';
+import { PATH } from '../constants/path';
 
 export const Layout = () => {
   const onPlayBtnClick = () => {
@@ -15,7 +18,8 @@ export const Layout = () => {
   // const { bookmark } = useParams();
 
   const { pathname } = useLocation();
-  const param = pathname.includes('category') ? 'category' : 'album';
+  console.log(pathname);
+  const param = pathname.includes(PATH.CATEGORIES) ? PATH.CATEGORIES : PATH.ALBUM;
 
   return (
     <MainWrapper>

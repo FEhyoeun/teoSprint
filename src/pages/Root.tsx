@@ -2,6 +2,8 @@ import React, { useEffect } from 'react';
 import { Outlet, useNavigate } from 'react-router-dom';
 import styled from '@emotion/styled';
 
+import { PATH } from '../constants/path';
+
 const Container = styled.div`
   display: flex;
   align-items: center;
@@ -23,9 +25,9 @@ export const Root = () => {
   useEffect(() => {
     const storedName = localStorage.getItem('name');
     if (storedName) {
-      navigate('/category');
+      navigate(`/${PATH.CATEGORIES}`);
     } else {
-      navigate('/profile');
+      navigate(`/${PATH.CATEGORIES}`);
     }
   }, [navigate]);
   return (

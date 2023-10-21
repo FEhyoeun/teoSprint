@@ -1,9 +1,12 @@
 import React from 'react';
 import { createBrowserRouter } from 'react-router-dom';
+
 import { Root } from '../pages/Root';
 import { Layout } from '../components/Layout';
 import { Category } from '../pages/Category';
 import Profile from '../pages/Profile';
+
+import { PATH } from '../constants/path';
 
 export const router = createBrowserRouter([
   {
@@ -16,17 +19,17 @@ export const router = createBrowserRouter([
         element: <Layout />,
         children: [
           {
-            path: 'category',
+            path: `/${PATH.CATEGORIES}`,
             element: <Category />,
           },
           {
-            path: 'album',
+            path: `/${PATH.ALBUM}`,
             element: <h4>Album</h4>,
           },
         ],
       },
       {
-        path: 'profile',
+        path: `/${PATH.PROFILE}`,
         element: <Profile />,
       },
     ],
