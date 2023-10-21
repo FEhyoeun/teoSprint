@@ -3,7 +3,9 @@ import categoryData from '../category/mock.json';
 
 export default function SideNavBar() {
     return (
+
         <div>
+
 <nav>
     <ul>
  {categoryData.data.map(category=>
