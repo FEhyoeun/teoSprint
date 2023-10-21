@@ -1,0 +1,770 @@
+[
+  {
+    "category": "animal",
+    "name": "Dog",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "animal",
+    "name": "Cat",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "animal",
+    "name": "Fish",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "animal",
+    "name": "Elephant",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "animal",
+    "name": "Tiger",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "animal",
+    "name": "Lion",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "animal",
+    "name": "Panda",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "animal",
+    "name": "Zebra",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "animal",
+    "name": "Kangaroo",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "animal",
+    "name": "Giraffe",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "animal",
+    "name": "Bear",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "animal",
+    "name": "Horse",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "animal",
+    "name": "Penguin",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "animal",
+    "name": "Dolphin",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "animal",
+    "name": "Whale",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "animal",
+    "name": "Shark",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "object",
+    "name": "Desk",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "object",
+    "name": "Chair",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "object",
+    "name": "Laptop",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "object",
+    "name": "Phone",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "object",
+    "name": "TV",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "object",
+    "name": "Car",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "object",
+    "name": "Bike",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "object",
+    "name": "Clock",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "object",
+    "name": "Pencil",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "object",
+    "name": "Book",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "object",
+    "name": "Camera",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "object",
+    "name": "Headphones",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "object",
+    "name": "Shoes",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "object",
+    "name": "Glasses",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "object",
+    "name": "Bag",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "object",
+    "name": "Hat",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "family",
+    "name": "Father",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "family",
+    "name": "Mother",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "family",
+    "name": "Brother",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "family",
+    "name": "Sister",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "family",
+    "name": "Grandfather",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "family",
+    "name": "Grandmother",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "family",
+    "name": "Uncle",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "family",
+    "name": "Aunt",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "family",
+    "name": "Cousin",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "family",
+    "name": "Nephew",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "family",
+    "name": "Niece",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "family",
+    "name": "Son",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "family",
+    "name": "Daughter",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "family",
+    "name": "Wife",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "family",
+    "name": "Husband",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "family",
+    "name": "Stepmother",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "color",
+    "name": "Red",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "color",
+    "name": "Blue",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "color",
+    "name": "Green",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "color",
+    "name": "Yellow",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "color",
+    "name": "Orange",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "color",
+    "name": "Purple",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "color",
+    "name": "Pink",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "color",
+    "name": "Black",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "color",
+    "name": "White",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "color",
+    "name": "Brown",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "color",
+    "name": "Gray",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "color",
+    "name": "Gold",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "color",
+    "name": "Silver",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "color",
+    "name": "Cyan",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "color",
+    "name": "Magenta",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "color",
+    "name": "Indigo",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "emotion",
+    "name": "Happy",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "emotion",
+    "name": "Sad",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "emotion",
+    "name": "Angry",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "emotion",
+    "name": "Surprised",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "emotion",
+    "name": "Scared",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "emotion",
+    "name": "Excited",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "emotion",
+    "name": "Nervous",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "emotion",
+    "name": "Confident",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "emotion",
+    "name": "Bored",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "emotion",
+    "name": "Jealous",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "emotion",
+    "name": "Relieved",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "emotion",
+    "name": "Grateful",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "emotion",
+    "name": "Annoyed",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "emotion",
+    "name": "Curious",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "emotion",
+    "name": "Overwhelmed",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "emotion",
+    "name": "Embarrassed",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "weather",
+    "name": "Sunny",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "weather",
+    "name": "Cloudy",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "weather",
+    "name": "Rainy",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "weather",
+    "name": "Snowy",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "weather",
+    "name": "Windy",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "weather",
+    "name": "Thunderstorm",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "weather",
+    "name": "Foggy",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "weather",
+    "name": "Hail",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "weather",
+    "name": "Mist",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "weather",
+    "name": "Tornado",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "weather",
+    "name": "Drought",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "weather",
+    "name": "Humid",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "weather",
+    "name": "Hot",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "weather",
+    "name": "Cold",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "weather",
+    "name": "Icy",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "weather",
+    "name": "Blizzard",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "number",
+    "name": "One",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "number",
+    "name": "Two",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "number",
+    "name": "Three",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "number",
+    "name": "Four",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "number",
+    "name": "Five",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "number",
+    "name": "Six",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "number",
+    "name": "Seven",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "number",
+    "name": "Eight",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "number",
+    "name": "Nine",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "number",
+    "name": "Ten",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "number",
+    "name": "Eleven",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "number",
+    "name": "Twelve",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "number",
+    "name": "Thirteen",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "number",
+    "name": "Fourteen",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "number",
+    "name": "Fifteen",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "number",
+    "name": "Sixteen",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "food",
+    "name": "Pizza",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "food",
+    "name": "Hamburger",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "food",
+    "name": "Sushi",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "food",
+    "name": "Pasta",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "food",
+    "name": "Steak",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "food",
+    "name": "Salad",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "food",
+    "name": "Rice",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "food",
+    "name": "Chicken",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "food",
+    "name": "Soup",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "food",
+    "name": "Sandwich",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "food",
+    "name": "Ice Cream",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "food",
+    "name": "Cake",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "food",
+    "name": "Fish",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "food",
+    "name": "Bread",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "food",
+    "name": "Cheese",
+    "img": "",
+    "audio": ""
+  },
+  {
+    "category": "food",
+    "name": "Fruit",
+    "img": "",
+    "audio": ""
+  }
+]
