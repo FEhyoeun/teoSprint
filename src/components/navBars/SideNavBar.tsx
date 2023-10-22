@@ -1,4 +1,4 @@
-import { Link, useLocation, useParams } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { PATH } from '../../constants/path';
 import categoryData from '../category/mock.json';
 import styled from '@emotion/styled';

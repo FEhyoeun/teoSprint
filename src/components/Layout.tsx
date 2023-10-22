@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from '@emotion/styled';
 import { Link, Outlet, useLocation } from 'react-router-dom';
 
@@ -13,9 +12,6 @@ export const Layout = () => {
   const onPlayBtnClick = () => {
     alert('준비중인 서비스 입니다');
   };
-
-  // TODO: index.tsx 참고, 라우터 이슈 해결 바랍니다.
-  // const { bookmark } = useParams();
 
   const { pathname } = useLocation();
   console.log(pathname);
@@ -44,7 +40,7 @@ const MainWrapper = styled.main`
   height: ${_mainHeight};
   display: grid;
   grid-template-columns: 12fr 1fr;
-  grid-template-rows: 1fr 12fr;
+  grid-template-rows: 1fr 14fr;
 `;
 const Header = styled.header`
   grid-column: 1/2;

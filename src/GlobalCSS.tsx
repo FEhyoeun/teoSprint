@@ -128,6 +128,14 @@ export default function GlobalCSS() {
           border-collapse: collapse;
           border-spacing: 0;
         }
+        *{
+          box-sizing: border-box;
+        }
+        body{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
       `}
     />
   );
