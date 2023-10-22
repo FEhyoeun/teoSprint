@@ -18,9 +18,9 @@ const Wrapper = styled.div`
   align-items: center;
 `;
 const Logo = styled.div`
-  width: 274px;
-  height: 72px;
-  background-color: gray;
+  width: 500px;
+  height: 500px;
+  background-image: url('/Users/song-injae/Desktop/코딩/teoSprint/src/assets/logo.svg');
 `;
 const ProjectName = styled.div`
   width: 100%;
@@ -62,7 +62,7 @@ const SubmitBtn = styled.button`
 
 const Profile = () => {
   const [name, setName] = useState<string>('');
-  const [profileImg, setProfileImg] = useState('src/assets/face.svg');
+  const [profileImg, setProfileImg] = useState('src/assets/logo.svg');
   const navigate = useNavigate();
 
   const handleSubmit = (e: React.MouseEvent) => {
@@ -72,6 +72,7 @@ const Profile = () => {
     } else {
       localStorage.setItem('name', name);
     }
+    localStorage.setItem('image', profileImg);
     navigate(`/${PATH.CATEGORIES}`);
   };
 
