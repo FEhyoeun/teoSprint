@@ -1,16 +1,19 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useParams } from 'react-router-dom';
 import { PATH } from '../../constants/path';
 import categoryData from '../category/mock.json';
 import styled from '@emotion/styled';
 import { _mainCol200 } from '../../constants/colors';
 
 export default function SideNavBar() {
+  const { pathname } = useLocation();
   return (
     <NavWrapper>
       <NavUl>
         {categoryData.data.map((category) => (
           <NavLi key={category.index}>
-            <NavLink to={`/${PATH.CATEGORIES}/${category.categoryName}`}>{category.icon}</NavLink>
+            <NavLink to={`/${pathname.includes("/categories") ? PATH.CATEGORIES : PATH.ALBUM}/${category.categoryName}`}>
+              <NavIcon src={category.iconUrl} />
+            </NavLink>
           </NavLi>
         ))}
       </NavUl>
@@ -34,7 +37,7 @@ width: 2rem;
 height: 2rem;
   padding: 0.5rem;
   margin: 3px 0;
-  background-color: yellow;
+  background-color: ${_mainCol200};
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -43,4 +46,8 @@ height: 2rem;
 
 const NavLink = styled(Link)`
   text-decoration: none;
+`
+
+const NavIcon = styled.img`
+  width: 95%;
 `
