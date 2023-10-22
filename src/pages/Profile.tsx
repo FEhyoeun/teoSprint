@@ -72,6 +72,7 @@ const Profile = () => {
     } else {
       localStorage.setItem('name', name);
     }
+    localStorage.setItem('image', profileImg);
     navigate(`/${PATH.CATEGORIES}`);
   };
 
