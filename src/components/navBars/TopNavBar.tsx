@@ -36,11 +36,14 @@ const ListWrapper_Category = styled.div`
   border-top-right-radius: 1rem;
   border-top-left-radius: 1rem;
 a{
+  width: inherit;
+  height: inherit;
+  padding: 10px 0;
   color: ${_mainTextDark};
   text-decoration: none;
   font-size: larger;
   font-weight: 800;
-  padding: 1rem;
+  text-align: center;
 &:active{
   color: ${_mainTextDark};
   text-decoration: none;
