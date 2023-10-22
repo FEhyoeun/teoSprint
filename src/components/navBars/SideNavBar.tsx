@@ -69,6 +69,7 @@ box-shadow: 5px 0px 10px -2px rgba(0,0,0,0.4);
   transition: all 0.2s  ;
   &:hover{
     scale: 1.1;
+    cursor: pointer;
   }
   &:active{
     scale: 0.9;
