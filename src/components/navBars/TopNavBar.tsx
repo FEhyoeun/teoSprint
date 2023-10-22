@@ -27,7 +27,7 @@ const UlWrapper = styled.nav`
 `;
 
 const ListWrapper_Category = styled.div`
-  width: 10rem;
+  width: 14rem;
   background-color: ${_mainCol300};
   display: flex;
   justify-content: center;

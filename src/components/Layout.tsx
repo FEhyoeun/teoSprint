@@ -40,7 +40,7 @@ const MainWrapper = styled.main`
   height: ${_mainHeight};
   display: grid;
   grid-template-columns: 12fr 1fr;
-  grid-template-rows: 1fr 12fr;
+  grid-template-rows: 1fr 14fr;
 `;
 const Header = styled.header`
   grid-column: 1/2;
