@@ -1,4 +1,4 @@
-import React from 'react';
+import { useEffect, useState } from 'react';
 import styled from '@emotion/styled';
 import { keyframes } from '@emotion/react';
 import {
@@ -9,6 +9,7 @@ import {
   DialogPortal,
   DialogTrigger,
 } from '@radix-ui/react-dialog';
+import { useSpeechRecognition, useSpeechSynthesis } from 'react-speech-kit';
 
 import { useRootRef } from '../../pages/Root';
 import CLOSE_IMG from '../../assets/close.svg';
@@ -80,7 +81,24 @@ const StyledCardImageWrapper = styled.div`
 
 export const CardModal = ({ children }: { children: React.ReactNode }) => {
   const rootRef = useRootRef();
-  const handleTTSClick = () => alert('준비중입니다.');
+  const [voiceText, setVoiceText] = useState('');
+  const { speak } = useSpeechSynthesis();
+  const [playing, setPlaying] = useState(false);
+  const { listen, listening, stop } = useSpeechRecognition({
+    onResult: (result: any) => {
+      // 음성인식 결과가 value 상태값으로 할당됩니다.
+      setVoiceText(result);
+    },
+  });
+  useEffect(() => {
+    // 안내 음성이 끝났을 때 인식
+    if (!playing) {
+      // 말하는 도중이 아닌 말이 끝난 뒤(말 사이 텀이 생기면) 출력
+      listen({ interimResults: false });
+    }
+  }, [playing]);
+
+  const handleTTSClick = () => speak({ text: children?.props?.alt });
 
   return (
     <Dialog>
