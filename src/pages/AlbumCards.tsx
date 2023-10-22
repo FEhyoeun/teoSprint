@@ -30,7 +30,9 @@ export default function AlbumCards() {
             {CARD_MOCK.filter((c) => c.category === category)
                 .slice(startIndex, endIndex)
                 .map((card) => (
-                    <CardItem data={card} key={card.name} />
+                    <CardBag>
+                        <CardItem data={card} key={card.name} />
+                    </CardBag>
                 ))}
         </CardsWrapper>
     );
@@ -48,10 +50,9 @@ const CardsWrapper = styled.div`
   overflow: hidden;
 `;
 
-
-const CardGrid = styled.div`
- display: grid;
- grid-template-columns: repeat(4, 1fr);
- grid-template-rows: repeat(2, 1fr);
- gap: 1px;
+const CardBag = styled.div`
+border: none;
+    border: 2px solid gray;
+    padding: 0.5rem;
+    border-top: none;
 `

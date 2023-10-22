@@ -77,6 +77,7 @@ const NavLi = styled.li`
   transition: all 0.2s;
   &:hover {
     scale: 1.1;
+    cursor: pointer;
   }
   &:active {
     scale: 0.9;

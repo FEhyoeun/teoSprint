@@ -11,12 +11,15 @@ import { PATH } from '../constants/path';
 export const Layout = () => {
   const { pathname } = useLocation();
   const param = pathname.includes(PATH.CATEGORIES) ? PATH.CATEGORIES : PATH.ALBUM;
-  const homeLink = `${PATH.ALBUM}/동물`;
 
+  }
   return (
     <MainWrapper>
       <Header>
-        <HomeLogo to={homeLink}>Home</HomeLogo>
+        <Logo>
+          <LogoFace src='src\assets\charecter\MaVo_Face.svg' />
+          <LogoText src='src\assets\charecter\MaVo_Logo.svg' />
+        </Logo>
         <TopNavBar />
       </Header>
       <SideSection>
@@ -56,15 +59,26 @@ const SideSection = styled.section`
   border-bottom-right-radius: 1rem;
 `;
 
-const HomeLogo = styled(Link)`
-  width: 2rem;
-  height: 2rem;
-  border-radius: 50%;
-  background-color: red;
-`;
+const Logo = styled.div`
+width: 13rem;
+display: flex;
+position: relative;
+`
 
 const OutletWrapper = styled.section<{ param: string }>`
   grid-column: 1/2;
   grid-row: 2/3;
   background-color: ${(props) => (props.param === PATH.CATEGORIES ? _mainCol300 : _mainCol400)};
 `;
+
+const LogoFace = styled.img`
+  width: 5rem;
+  position: absolute;
+top: -0.5rem;
+`
+const LogoText = styled.img`
+  width: 10rem;
+  position: absolute;
+top: -2.5rem;
+left: 4rem;
+`
