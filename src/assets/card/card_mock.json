@@ -97,98 +97,74 @@
   },
   {
     "category": "사물",
-    "name": "Desk",
-    "img": "",
+    "name": "가방",
+    "img": "src/assets/card/bag.svg",
     "audio": ""
   },
   {
     "category": "사물",
-    "name": "Chair",
-    "img": "",
+    "name": "냉장고",
+    "img": "src/assets/card/refrigerator.svg",
     "audio": ""
   },
   {
     "category": "사물",
-    "name": "Laptop",
-    "img": "",
+    "name": "놀이터",
+    "img": "src/assets/card/playground.svg",
     "audio": ""
   },
   {
     "category": "사물",
-    "name": "Phone",
-    "img": "",
+    "name": "블록",
+    "img": "src/assets/card/block.svg",
     "audio": ""
   },
   {
     "category": "사물",
-    "name": "TV",
-    "img": "",
+    "name": "빗",
+    "img": "src/assets/card/comb.svg",
     "audio": ""
   },
   {
     "category": "사물",
-    "name": "Car",
-    "img": "",
+    "name": "신발",
+    "img": "src/assets/card/shoes.svg",
     "audio": ""
   },
   {
     "category": "사물",
-    "name": "Bike",
-    "img": "",
+    "name": "안경",
+    "img": "src/assets/card/glasses.svg",
     "audio": ""
   },
   {
     "category": "사물",
-    "name": "Clock",
-    "img": "",
+    "name": "우산",
+    "img": "src/assets/card/umbrella.svg",
     "audio": ""
   },
   {
     "category": "사물",
-    "name": "Pencil",
-    "img": "",
+    "name": "의자",
+    "img": "src/assets/card/chair.svg",
     "audio": ""
   },
   {
     "category": "사물",
-    "name": "Book",
-    "img": "",
+    "name": "자동차",
+    "img": "src/assets/card/car.svg",
     "audio": ""
   },
   {
     "category": "사물",
-    "name": "Camera",
-    "img": "",
+    "name": "침대",
+    "img": "src/assets/card/bed.svg",
     "audio": ""
   },
   {
     "category": "사물",
-    "name": "Headphones",
-    "img": "",
-    "audio": ""
-  },
-  {
-    "category": "사물",
-    "name": "Shoes",
-    "img": "",
-    "audio": ""
-  },
-  {
-    "category": "사물",
-    "name": "Glasses",
-    "img": "",
-    "audio": ""
-  },
-  {
-    "category": "사물",
-    "name": "Bag",
-    "img": "",
-    "audio": ""
-  },
-  {
-    "category": "사물",
-    "name": "Hat",
-    "img": "",
+    "name": "컵",
+    "img": "src/assets/card/cup.svg",
     "audio": ""
   },
   {
