@@ -12,8 +12,11 @@ import {
 import { useSpeechRecognition, useSpeechSynthesis } from 'react-speech-kit';
 
 import { useRootRef } from '../../pages/Root';
+import CARDS_MOCK from '../../assets/card/card_mock.json';
 import CLOSE_IMG from '../../assets/close.svg';
 import VOLUME_IMG from '../../assets/volume.svg';
+
+import { Card as CardType } from '../../types/card';
 
 const translateAnimation = keyframes`
   from {
@@ -60,12 +63,10 @@ const StyledDialogContent = styled(DialogContent)`
   left: 50%;
   width: 428px;
   height: 567.88px;
+  border-radius: 8px;
 
   display: flex;
   flex-direction: column;
-
-  background-color: white;
-  border-radius: 8px;
 
   transform: translate(-50%, -50%);
   animation-name: ${contentShow};
@@ -75,24 +76,43 @@ const StyledDialogContent = styled(DialogContent)`
 const StyledButtonWrapper = styled.div`
   display: flex;
   justify-content: space-between;
+  position: relative;
+  z-index: 2;
 `;
 
 const StyledTTSButton = styled.input`
   width: fit-content;
   height: fit-content;
-  margin: 10px; // TODO: 정확한 값 기입 필요
+  margin: 10px 0 0 15px; // TODO: 정확한 값 기입 필요
 `;
 const StyledCloseButton = styled.input`
   width: fit-content;
   height: fit-content;
-  margin: 20px; // TODO: 정확한 값 기입 필요
+  margin: 20px 23px 0 0; // TODO: 정확한 값 기입 필요
 `;
-const StyledCardImageWrapper = styled.div`
-  align-self: center; // TODO: 스타일 조정 필요
+const StyledCardImg = styled.img`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+`;
+const StyledPrevButton = styled.button`
+  position: absolute;
+  top: 50%;
+  left: -30px;
+`;
+const StyledNextButton = styled.button`
+  position: absolute;
+  top: 50%;
+  right: -30px;
 `;
 
-export const CardModal = ({ children }: { children: React.ReactNode }) => {
+export const CardModal = ({ children, name }: { children: React.ReactNode; name: string }) => {
   const rootRef = useRootRef();
+
+  const initialState = CARDS_MOCK.find((c) => c.name === name);
+  const [card, setCard] = useState(initialState as CardType);
+
   const [voiceText, setVoiceText] = useState('');
   const { speak } = useSpeechSynthesis();
   const [playing, setPlaying] = useState(false);
@@ -108,12 +128,27 @@ export const CardModal = ({ children }: { children: React.ReactNode }) => {
       // 말하는 도중이 아닌 말이 끝난 뒤(말 사이 텀이 생기면) 출력
       listen({ interimResults: false });
     }
-  }, [playing]);
+  }, [listen, playing]);
 
-  const handleTTSClick = () => speak({ text: children?.props?.alt });
+  const getCard = (direction: 'next' | 'prev') => {
+    const currentCategoryCards = CARDS_MOCK.filter((c) => c.category === card?.category);
+    const currentIndex = currentCategoryCards.findIndex((c) => c.name === card.name);
+
+    if (direction === 'next' && currentIndex === currentCategoryCards.length - 1)
+      return setCard(currentCategoryCards[0]);
+    if (direction === 'next') return setCard(currentCategoryCards[currentIndex + 1]);
+
+    if (currentIndex === 0) return setCard(currentCategoryCards[currentCategoryCards.length - 1]);
+    return setCard(currentCategoryCards[currentIndex - 1]);
+  };
+
+  const handleTTSClick = () => speak({ text: name });
+  const handlePrevClick = () => getCard('prev');
+  const handleNextClick = () => getCard('next');
+  const handleOpenChange = (close: boolean) => close && setCard(initialState as CardType);
 
   return (
-    <Dialog>
+    <Dialog onOpenChange={handleOpenChange}>
       <StyledDialogTrigger>{children}</StyledDialogTrigger>
 
       <DialogPortal container={rootRef}>
@@ -134,7 +169,10 @@ export const CardModal = ({ children }: { children: React.ReactNode }) => {
             </DialogClose>
           </StyledButtonWrapper>
 
-          <StyledCardImageWrapper>{children}</StyledCardImageWrapper>
+          <StyledCardImg alt={card?.name} src={`/${card?.img}`} />
+
+          <StyledPrevButton onClick={handlePrevClick}>이전 버튼</StyledPrevButton>
+          <StyledNextButton onClick={handleNextClick}>다음 버튼</StyledNextButton>
         </StyledDialogContent>
       </DialogPortal>
     </Dialog>
