@@ -69,6 +69,10 @@ width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.2s  ;
+  &:hover{
+    scale: 1.1;
+  }
   `
 
 const IconImage = styled.img`
