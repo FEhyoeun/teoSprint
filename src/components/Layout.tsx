@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from '@emotion/styled';
 import { Link, Outlet, useLocation } from 'react-router-dom';
 
@@ -13,9 +12,6 @@ export const Layout = () => {
   const onPlayBtnClick = () => {
     alert('준비중인 서비스 입니다');
   };
-
-  // TODO: index.tsx 참고, 라우터 이슈 해결 바랍니다.
-  // const { bookmark } = useParams();
 
   const { pathname } = useLocation();
   console.log(pathname);

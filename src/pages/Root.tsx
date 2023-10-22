@@ -3,6 +3,7 @@ import { Outlet, useNavigate } from 'react-router-dom';
 import styled from '@emotion/styled';
 
 import { PATH } from '../constants/path';
+import { _mainHeight, _mainWidth } from '../constants/sizes';
 
 const Container = styled.div`
   display: flex;
@@ -11,12 +12,12 @@ const Container = styled.div`
 `;
 
 const Wrapper = styled.div`
-  width: 100vw;
-  max-height: 700px;
-  height: 100vh;
+  min-width: ${_mainWidth};
+  min-height:${_mainHeight};
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: black;
 `;
 
 const RootContext = createContext<HTMLDivElement | null>(null);
