@@ -1,36 +1,22 @@
 import React from 'react';
-import { css } from '@emotion/react';
 import styled from '@emotion/styled';
+import Icon from '../common/Icon';
 
-const StyledPageButton = styled.button<{ isNext: boolean }>`
-  ${(props) =>
-    props.isNext
-      ? css`
-          left: 0;
-        `
-      : css`
-          right: 0;
-        `};
+const IconStyled = styled(Icon)<{ isNext: boolean }>`
   position: absolute;
   top: 50%;
-
-  background-color: white;
-  padding: 0;
-  border: 0;
+  transform: translateY(-50%);
+  left: ${({ isNext }) => isNext && 0};
+  right: ${({ isNext }) => !isNext && 0};
+  cursor: pointer;
 `;
 
 const Next = ({ onClick }: { onClick: () => void }) => {
-  return (
-    <StyledPageButton isNext onClick={onClick}>
-      {'<'}
-    </StyledPageButton>
-  );
+  return <IconStyled name="chevron-left" isNext size={96} color="white" onClick={onClick} />;
 };
 const Prev = ({ onClick }: { onClick: () => void }) => {
   return (
-    <StyledPageButton isNext={false} onClick={onClick}>
-      {'>'}
-    </StyledPageButton>
+    <IconStyled name="chevron-right" isNext={false} size={96} color="white" onClick={onClick} />
   );
 };
 
