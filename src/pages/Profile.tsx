@@ -18,9 +18,9 @@ const Wrapper = styled.div`
   align-items: center;
 `;
 const Logo = styled.div`
-  width: 500px;
-  height: 500px;
-  background-image: url('/Users/song-injae/Desktop/코딩/teoSprint/src/assets/logo.svg');
+  width: 274px;
+  height: 72px;
+  background-color: gray;
 `;
 const ProjectName = styled.div`
   width: 100%;
