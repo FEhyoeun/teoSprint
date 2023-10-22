@@ -10,13 +10,13 @@ import { PATH } from '../constants/path';
 
 export const Layout = () => {
   const { pathname } = useLocation();
-  console.log(pathname);
   const param = pathname.includes(PATH.CATEGORIES) ? PATH.CATEGORIES : PATH.ALBUM;
+  const homeLink = `${PATH.ALBUM}/동물`;
 
   return (
     <MainWrapper>
       <Header>
-        <HomeLogo to="/">Home</HomeLogo>
+        <HomeLogo to={homeLink}>Home</HomeLogo>
         <TopNavBar />
       </Header>
       <SideSection>
