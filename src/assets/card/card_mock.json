@@ -169,98 +169,44 @@
   },
   {
     "category": "가족",
-    "name": "Father",
-    "img": "",
+    "name": "누나",
+    "img": "src/assets/card/sister.svg",
     "audio": ""
   },
   {
     "category": "가족",
-    "name": "Mother",
-    "img": "",
+    "name": "동생",
+    "img": "src/assets/card/little_brother.svg",
     "audio": ""
   },
   {
     "category": "가족",
-    "name": "Brother",
-    "img": "",
+    "name": "아빠",
+    "img": "src/assets/card/father.svg",
     "audio": ""
   },
   {
     "category": "가족",
-    "name": "Sister",
-    "img": "",
+    "name": "엄마",
+    "img": "src/assets/card/mother.svg",
     "audio": ""
   },
   {
     "category": "가족",
-    "name": "Grandfather",
-    "img": "",
+    "name": "할머니",
+    "img": "src/assets/card/grandma.svg",
     "audio": ""
   },
   {
     "category": "가족",
-    "name": "Grandmother",
-    "img": "",
+    "name": "할아버지",
+    "img": "src/assets/card/grandfather.svg",
     "audio": ""
   },
   {
     "category": "가족",
-    "name": "Uncle",
-    "img": "",
-    "audio": ""
-  },
-  {
-    "category": "가족",
-    "name": "Aunt",
-    "img": "",
-    "audio": ""
-  },
-  {
-    "category": "가족",
-    "name": "Cousin",
-    "img": "",
-    "audio": ""
-  },
-  {
-    "category": "가족",
-    "name": "Nephew",
-    "img": "",
-    "audio": ""
-  },
-  {
-    "category": "가족",
-    "name": "Niece",
-    "img": "",
-    "audio": ""
-  },
-  {
-    "category": "가족",
-    "name": "Son",
-    "img": "",
-    "audio": ""
-  },
-  {
-    "category": "가족",
-    "name": "Daughter",
-    "img": "",
-    "audio": ""
-  },
-  {
-    "category": "가족",
-    "name": "Wife",
-    "img": "",
-    "audio": ""
-  },
-  {
-    "category": "가족",
-    "name": "Husband",
-    "img": "",
-    "audio": ""
-  },
-  {
-    "category": "가족",
-    "name": "Stepmother",
-    "img": "",
+    "name": "형",
+    "img": "src/assets/card/older_brother.svg",
     "audio": ""
   },
   {
