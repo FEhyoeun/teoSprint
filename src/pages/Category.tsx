@@ -1,9 +1,20 @@
 import React, { useState } from 'react';
+import styled from '@emotion/styled';
 import { useParams } from 'react-router-dom';
 
 import { CardItem } from '../components/card/CardItem';
+import { CardPage } from '../components/card/CardPage';
 
 import CARD_MOCK from '../assets/mock.json';
+
+const StyledCategoryWrapper = styled.div`
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+`;
 
 export const Category = () => {
   const { category } = useParams();
@@ -13,12 +24,15 @@ export const Category = () => {
   const endIndex = (page + 1) * 8;
 
   return (
-    <>
+    <StyledCategoryWrapper>
+      <CardPage.Next />
+      <CardPage.Prev />
+
       {CARD_MOCK.filter((c) => c.category === category)
         .slice(startIndex, endIndex)
         .map((card) => (
           <CardItem data={card} key={card.name} />
         ))}
-    </>
+    </StyledCategoryWrapper>
   );
 };

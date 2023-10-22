@@ -12,6 +12,7 @@ const StyledCardItem = styled.div`
   width: 150px;
   height: 180px;
 
+  background-color: white;
   padding: 20px;
   border-radius: 15px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
