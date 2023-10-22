@@ -2,49 +2,49 @@
   "data": [
     {
       "index": 0,
-      "categoryName": "animal",
+      "categoryName": "동물",
       "icon": "🐕",
       "imgUrl": "src/assets/category/animal.svg"
     },
     {
       "index": 1,
-      "categoryName": "object",
+      "categoryName": "사물",
       "icon": "🪑",
       "imgUrl": "src/assets/category/object.svg"
     },
     {
       "index": 2,
-      "categoryName": "family",
+      "categoryName": "가족",
       "icon": "👪",
       "imgUrl": "src/assets/category/family.svg"
     },
     {
       "index": 3,
-      "categoryName": "color",
+      "categoryName": "색깔",
       "icon": "🎨",
       "imgUrl": "src/assets/category/colors.svg"
     },
     {
       "index": 4,
-      "categoryName": "emotion",
+      "categoryName": "감정",
       "icon": "😄",
       "imgUrl": "src/assets/category/emotion.svg"
     },
     {
       "index": 5,
-      "categoryName": "weather",
+      "categoryName": "날씨",
       "icon": "☀️",
       "imgUrl": "src/assets/category/weather.svg"
     },
     {
       "index": 6,
-      "categoryName": "number",
+      "categoryName": "숫자",
       "icon": "🔢",
       "imgUrl": "src/assets/category/number.svg"
     },
     {
       "index": 7,
-      "categoryName": "food",
+      "categoryName": "음식",
       "icon": "🍽️",
       "imgUrl": "src/assets/category/food.svg"
     }
