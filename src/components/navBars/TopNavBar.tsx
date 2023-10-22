@@ -29,12 +29,14 @@ const UlWrapper = styled.nav`
 
 const ListWrapper_Category = styled.div`
   width: 10rem;
-  height: 3rem;
+  height: 2.5rem;
   background-color: ${_mainCol300};
   display: flex;
   justify-content: center;
   align-items: center;
   margin-left: 0.5rem;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
 `;
 
 const ListWrapper_Album = styled(ListWrapper_Category)`

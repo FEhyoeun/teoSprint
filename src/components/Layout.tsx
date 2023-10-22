@@ -28,7 +28,8 @@ export const Layout = () => {
         <TopNavBar />
       </Header>
       <SideSection>
-        <button onClick={onPlayBtnClick}>▶️</button>
+        <PlayBtn onClick={onPlayBtnClick}>
+          <span>▶️</span></PlayBtn>
         <SideNavBar />
       </SideSection>
       <OutletWrapper param={param}>
@@ -39,12 +40,11 @@ export const Layout = () => {
 };
 
 const MainWrapper = styled.main`
-  background-color: ${_mainColBg};
   width: ${_mainWidth};
   height: ${_mainHeight};
   display: grid;
-  grid-template-columns: 10fr 1fr;
-  grid-template-rows: 1fr 10fr;
+  grid-template-columns: 12fr 1fr;
+  grid-template-rows: 1fr 12fr;
 `;
 const Header = styled.header`
   grid-column: 1/2;
@@ -56,11 +56,19 @@ const Header = styled.header`
 const SideSection = styled.section`
   grid-column: 2/3;
   grid-row: 2/3;
+  background-color: ${_mainColBg};
+  display: flex;
+  padding: 5px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
 `;
 
 const HomeLogo = styled(Link)`
-  width: 3rem;
-  height: 3rem;
+  width: 2rem;
+  height: 2rem;
   border-radius: 50%;
   background-color: red;
 `;
@@ -70,3 +78,17 @@ const OutletWrapper = styled.section<{ param: string }>`
   grid-row: 2/3;
   background-color: ${(props) => (props.param === PATH.CATEGORIES ? _mainCol300 : _mainCol400)};
 `;
+
+const PlayBtn = styled.button`
+width: 2.5rem;
+height: 2.5rem;
+  background: none;
+  border: 2px solid black;
+  border-radius: 50%;
+  span{
+font-size: large;
+  }
+  &:hover{
+    cursor: pointer;
+  }
+`
