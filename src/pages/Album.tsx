@@ -23,4 +23,5 @@ width: 98%;
 height: 95%;
 background-color: white;
 border-radius: 0px 5px 5px 0px;
+box-shadow: 13px 0px 10px -2px rgba(0,0,0,0.4);
 `

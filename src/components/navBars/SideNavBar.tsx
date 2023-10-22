@@ -65,6 +65,14 @@ border-radius: 50%;
 display: flex;
 justify-content: center;
 align-items: center;
+box-shadow: 5px 0px 10px -2px rgba(0,0,0,0.4);
+  transition: all 0.2s  ;
+  &:hover{
+    scale: 1.1;
+  }
+  &:active{
+    scale: 0.9;
+  }
 `
 
 const NavLink = styled(Link)`

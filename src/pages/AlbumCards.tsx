@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import styled from '@emotion/styled';
 import CARD_MOCK from '../assets/card/card_mock.json';
 import { useParams } from 'react-router';
@@ -47,3 +47,11 @@ const CardsWrapper = styled.div`
   gap: 20px;
   overflow: hidden;
 `;
+
+
+const CardGrid = styled.div`
+ display: grid;
+ grid-template-columns: repeat(4, 1fr);
+ grid-template-rows: repeat(2, 1fr);
+ gap: 1px;
+`
