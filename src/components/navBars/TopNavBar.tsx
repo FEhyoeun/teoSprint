@@ -8,12 +8,22 @@ export default function TopNavBar() {
   return (
     <NavWrapper>
       <UlWrapper>
-        <ListWrapper_Category>
-          <Link to={`/${PATH.CATEGORIES}`}>단어장</Link>
-        </ListWrapper_Category>
         <ListWrapper_Album>
-          <Link to={`/${PATH.ALBUM}/동물`}>앨범</Link>
+          <Link to={`/${PATH.ALBUM}/동물`}>
+            <TextBox>
+              <IconImage src='src\assets\album.svg' />
+              <Text>앨범</Text>
+            </TextBox>
+          </Link>
         </ListWrapper_Album>
+        <ListWrapper_Category>
+          <Link to={`/${PATH.CATEGORIES}`}>
+            <TextBox>
+              <IconImage src='src\assets\library.svg' />
+              <Text>단어장</Text>
+            </TextBox>
+          </Link>
+        </ListWrapper_Category>
       </UlWrapper>
     </NavWrapper>
   );
@@ -53,3 +63,18 @@ a{
 const ListWrapper_Album = styled(ListWrapper_Category)`
   background-color: ${_mainCol400};
 `;
+
+const TextBox = styled.div`
+width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  `
+
+const IconImage = styled.img`
+  width: 40px;
+  `
+const Text = styled.span`
+  font-size: 30px;
+  margin-left: 5px;
+`
