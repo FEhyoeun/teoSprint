@@ -14,11 +14,23 @@ import { useRootRef } from '../../pages/Root';
 import CLOSE_IMG from '../../assets/close.svg';
 import VOLUME_IMG from '../../assets/volume.svg';
 
+const translateAnimation = keyframes`
+  from {
+    transform: translateX(500%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+`;
+
 const StyledDialogTrigger = styled(DialogTrigger)`
   background-color: transparent;
   padding: 0;
   border: 0;
   cursor: pointer;
+  animation: ${translateAnimation} 1s ease;
 `;
 
 const overlayShow = keyframes`
