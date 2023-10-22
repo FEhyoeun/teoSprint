@@ -1,3 +1,4 @@
+import React from 'react';
 import styled from '@emotion/styled';
 
 import { Card as CardType } from '../../types/card';
@@ -8,7 +9,8 @@ const StyledCardItem = styled.div`
   gap: 10px;
 
   box-sizing: border-box;
-  flex-basis: calc(25% - 40px); // 20px은 부모의 gap
+  width: 150px;
+  height: 180px;
 
   padding: 20px;
   border-radius: 15px;
@@ -18,8 +20,8 @@ const StyledCardItem = styled.div`
 
 const StyledCardImg = styled.img`
   border-radius: 100%;
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   text-align: center;
   background-color: gray;
 `;
