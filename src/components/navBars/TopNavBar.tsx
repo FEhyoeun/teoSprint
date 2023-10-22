@@ -1,31 +1,42 @@
-import { Link } from 'react-router-dom';
+import React from 'react';
+import { Link, useParams } from 'react-router-dom';
+import styled from '@emotion/styled';
+import { _mainCol300, _mainCol400 } from '../../constants/colors';
+import { PATH } from '../../constants/path';
 
-const topNavigations = [
-  {
-    id: 'vocalist',
-    name: '단어장',
-  },
-  {
-    id: 'album',
-    name: '단어장',
-  },
-];
 export default function TopNavBar() {
+  const { bookmark } = useParams();
   return (
-    <div>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/category">단어장</Link>
-          </li>
-          <li>
-            <Link to="/album">앨범</Link>
-          </li>
-          <li>
-            <Link to="/emergency ">비상연락망</Link>
-          </li>
-        </ul>
-      </nav>
-    </div>
+    <NavWrapper>
+      <UlWrapper>
+        <ListWrapper_Category>
+          <Link to={`/${PATH.CATEGORIES}`}>단어장</Link>
+        </ListWrapper_Category>
+        <ListWrapper_Album>
+          <Link to={`/${PATH.ALBUM}`}>앨범</Link>
+        </ListWrapper_Album>
+      </UlWrapper>
+    </NavWrapper>
   );
 }
+
+const NavWrapper = styled.nav`
+  display: flex;
+`;
+const UlWrapper = styled.nav`
+  display: flex;
+`;
+
+const ListWrapper_Category = styled.div`
+  width: 10rem;
+  height: 3rem;
+  background-color: ${_mainCol300};
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0.5rem;
+`;
+
+const ListWrapper_Album = styled(ListWrapper_Category)`
+  background-color: ${_mainCol400};
+`;

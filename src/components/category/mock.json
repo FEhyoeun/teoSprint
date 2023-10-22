@@ -2,43 +2,51 @@
   "data": [
     {
       "index": 0,
-      "categoryName": "동물",
-      "icon": "🐕"
+      "categoryName": "animal",
+      "icon": "🐕",
+      "imgUrl": "https://images.pexels.com/photos/2558605/pexels-photo-2558605.jpeg?cs=srgb&dl=pexels-chevon-rossouw-2558605.jpg&fm=jpg"
     },
     {
       "index": 1,
-      "categoryName": "사물",
-      "icon": "🪑"
+      "categoryName": "object",
+      "icon": "🪑",
+      "imgUrl": "https://images.pexels.com/photos/2558605/pexels-photo-2558605.jpeg?cs=srgb&dl=pexels-chevon-rossouw-2558605.jpg&fm=jpg"
     },
     {
       "index": 2,
-      "categoryName": "가족",
-      "icon": "👪"
+      "categoryName": "family",
+      "icon": "👪",
+      "imgUrl": "https://images.pexels.com/photos/2558605/pexels-photo-2558605.jpeg?cs=srgb&dl=pexels-chevon-rossouw-2558605.jpg&fm=jpg"
     },
     {
       "index": 3,
-      "categoryName": "색깔",
-      "icon": "🎨"
+      "categoryName": "color",
+      "icon": "🎨",
+      "imgUrl": "https://images.pexels.com/photos/2558605/pexels-photo-2558605.jpeg?cs=srgb&dl=pexels-chevon-rossouw-2558605.jpg&fm=jpg"
     },
     {
       "index": 4,
-      "categoryName": "감정",
-      "icon": "😄"
+      "categoryName": "emotion",
+      "icon": "😄",
+      "imgUrl": "https://images.pexels.com/photos/2558605/pexels-photo-2558605.jpeg?cs=srgb&dl=pexels-chevon-rossouw-2558605.jpg&fm=jpg"
     },
     {
       "index": 5,
-      "categoryName": "날씨",
-      "icon": "☀️"
+      "categoryName": "weather",
+      "icon": "☀️",
+      "imgUrl": "https://images.pexels.com/photos/2558605/pexels-photo-2558605.jpeg?cs=srgb&dl=pexels-chevon-rossouw-2558605.jpg&fm=jpg"
     },
     {
       "index": 6,
-      "categoryName": "숫자",
-      "icon": "🔢"
+      "categoryName": "number",
+      "icon": "🔢",
+      "imgUrl": "https://images.pexels.com/photos/2558605/pexels-photo-2558605.jpeg?cs=srgb&dl=pexels-chevon-rossouw-2558605.jpg&fm=jpg"
     },
     {
       "index": 7,
-      "categoryName": "음식",
-      "icon": "🍽️"
+      "categoryName": "food",
+      "icon": "🍽️",
+      "imgUrl": "https://images.pexels.com/photos/2558605/pexels-photo-2558605.jpeg?cs=srgb&dl=pexels-chevon-rossouw-2558605.jpg&fm=jpg"
     }
   ]
 }

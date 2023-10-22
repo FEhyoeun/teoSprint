@@ -2,6 +2,8 @@ import React, { useEffect } from 'react';
 import { Outlet, useNavigate } from 'react-router-dom';
 import styled from '@emotion/styled';
 
+import { PATH } from '../constants/path';
+
 const Container = styled.div`
   display: flex;
   align-items: center;
@@ -12,7 +14,9 @@ const Wrapper = styled.div`
   width: 100vw;
   max-height: 700px;
   height: 100vh;
-  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const Root = () => {
@@ -21,12 +25,11 @@ export const Root = () => {
   useEffect(() => {
     const storedName = localStorage.getItem('name');
     if (storedName) {
-      navigate('/category');
+      navigate(`/${PATH.CATEGORIES}`);
     } else {
-      navigate('/profile');
+      navigate(`/${PATH.PROFILE}`);
     }
   }, [navigate]);
-
   return (
     <Container>
       <Wrapper>

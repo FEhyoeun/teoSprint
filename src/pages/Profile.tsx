@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import styled from '@emotion/styled';
 import { useNavigate } from 'react-router-dom';
 
+import { PATH } from '../constants/path';
+
 const Container = styled.div`
   width: 100%;
   height: 100%;
@@ -68,7 +70,7 @@ const Profile = () => {
     } else {
       localStorage.setItem('name', name);
     }
-    navigate('/category');
+    navigate(`/${PATH.CATEGORIES}`);
   };
 
   return (
