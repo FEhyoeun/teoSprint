@@ -62,7 +62,7 @@ const SubmitBtn = styled.button`
 
 const Profile = () => {
   const [name, setName] = useState<string>('');
-  const [profileImg, setProfileImg] = useState('src/assets/logo.svg');
+  const [profileImg, setProfileImg] = useState('src/assets/face.svg');
   const navigate = useNavigate();
 
   const handleSubmit = (e: React.MouseEvent) => {
