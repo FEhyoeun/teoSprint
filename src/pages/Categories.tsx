@@ -42,6 +42,7 @@ const StyledCategoryItem = styled.input`
   border-radius: 5px;
   animation: ${translateAnimation} 1s ease;
   cursor: pointer;
+  box-shadow: 5px 0px 10px -2px rgba(0,0,0,0.4);
 `;
 
 export const Categories = () => {
