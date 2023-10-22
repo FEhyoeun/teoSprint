@@ -1,6 +1,12 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import Icon from '../common/Icon';
+import { Card as CardType } from '../../types/card';
+
+interface CategoryDetailModal {
+  data: CardType | null;
+  setShowModal: (val: boolean) => void;
+}
 
 const Background = styled.div`
   position: absolute;
@@ -20,6 +26,8 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
+`;
+const IconStyled = styled(Icon)`
   cursor: pointer;
 `;
 const CardWrapper = styled.div`
@@ -27,26 +35,41 @@ const CardWrapper = styled.div`
   width: 50%;
   height: 80%;
   border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
-const CardTopNav = styled.div``;
+const CardTopNav = styled.div`
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+`;
 const CardImage = styled.div`
-  width: 50%;
-  height: 50%;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
+  background-color: gray;
+  margin: 10px 0;
 `;
-const CardName = styled.div``;
+const CardName = styled.div`
+  font-size: 64px;
+`;
 
-const CategoryDetailModal = () => {
+const CategoryDetailModal = ({ data, setShowModal }: CategoryDetailModal) => {
   return (
-    <>
-      <Background>
-        <Wrapper>
-          <Icon name="chevron-left" size={30} />
-          <CardWrapper></CardWrapper>
-          <Icon name="chevron-right" size={30} />
-        </Wrapper>
-      </Background>
-    </>
+    <Background>
+      <Wrapper>
+        <CardWrapper>
+          <CardTopNav>
+            <IconStyled name="volume-2" size={30} onClick={() => alert('준비중입니다.')} />
+            <IconStyled name="x" size={30} onClick={() => setShowModal(false)} />
+          </CardTopNav>
+          <CardImage />
+          <CardName>{data?.name}</CardName>
+        </CardWrapper>
+      </Wrapper>
+    </Background>
   );
 };
 
