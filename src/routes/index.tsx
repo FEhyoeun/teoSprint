@@ -8,6 +8,7 @@ import { Category } from '../pages/Category';
 import Profile from '../pages/Profile';
 
 import { PATH } from '../constants/path';
+import Album from '../pages/Album';
 
 export const router = createBrowserRouter([
   {
@@ -31,7 +32,7 @@ export const router = createBrowserRouter([
           },
           {
             path: `/${PATH.ALBUM}`,
-            element: <h4>Album</h4>,
+            element: <Album />
           },
         ],
       },
