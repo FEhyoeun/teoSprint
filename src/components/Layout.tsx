@@ -1,15 +1,26 @@
-import { Link, Outlet, useParams } from 'react-router-dom';
+import React from 'react';
+import styled from '@emotion/styled';
+import { Link, Outlet, useLocation } from 'react-router-dom';
+
 import SideNavBar from './navBars/SideNavBar';
 import TopNavBar from './navBars/TopNavBar';
-import styled from '@emotion/styled';
-import { _mainCol200, _mainCol300, _mainCol400, _mainColBg } from '../constants/colors';
+
 import { _mainHeight, _mainWidth } from '../constants/sizes';
+import { _mainCol300, _mainCol400, _mainColBg } from '../constants/colors';
+import { PATH } from '../constants/path';
 
 export const Layout = () => {
   const onPlayBtnClick = () => {
     alert('준비중인 서비스 입니다');
   };
-  const { bookmark } = useParams();
+
+  // TODO: index.tsx 참고, 라우터 이슈 해결 바랍니다.
+  // const { bookmark } = useParams();
+
+  const { pathname } = useLocation();
+  console.log(pathname);
+  const param = pathname.includes(PATH.CATEGORIES) ? PATH.CATEGORIES : PATH.ALBUM;
+
   return (
     <MainWrapper>
       <Header>
@@ -20,7 +31,7 @@ export const Layout = () => {
         <button onClick={onPlayBtnClick}>▶️</button>
         <SideNavBar />
       </SideSection>
-      <OutletWrapper param={bookmark}>
+      <OutletWrapper param={param}>
         <Outlet />
       </OutletWrapper>
     </MainWrapper>
@@ -57,5 +68,5 @@ const HomeLogo = styled(Link)`
 const OutletWrapper = styled.section<{ param: string }>`
   grid-column: 1/2;
   grid-row: 2/3;
-  background-color: ${(props) => (props.param === 'category' ? _mainCol300 : _mainCol400)};
+  background-color: ${(props) => (props.param === PATH.CATEGORIES ? _mainCol300 : _mainCol400)};
 `;

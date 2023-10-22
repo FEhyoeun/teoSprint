@@ -8,6 +8,7 @@ const StyledCategoryItem = styled.img`
   cursor: pointer;
 `;
 
+// TODO: Category.tsx에서 이전에 사용했으나, 현재 사용 안함.
 export const CategoryItem = ({ index, categoryName, imgUrl }: CategoryItemType) => {
   return (
     <>

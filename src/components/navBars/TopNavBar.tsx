@@ -1,6 +1,8 @@
+import React from 'react';
 import { Link, useParams } from 'react-router-dom';
 import styled from '@emotion/styled';
 import { _mainCol300, _mainCol400 } from '../../constants/colors';
+import { PATH } from '../../constants/path';
 
 export default function TopNavBar() {
   const { bookmark } = useParams();
@@ -8,10 +10,10 @@ export default function TopNavBar() {
     <NavWrapper>
       <UlWrapper>
         <ListWrapper_Category>
-          <Link to="/category">단어장</Link>
+          <Link to={`/${PATH.CATEGORIES}`}>단어장</Link>
         </ListWrapper_Category>
         <ListWrapper_Album>
-          <Link to="/album">앨범</Link>
+          <Link to={`/${PATH.ALBUM}`}>앨범</Link>
         </ListWrapper_Album>
       </UlWrapper>
     </NavWrapper>
