@@ -9,7 +9,6 @@ import Profile from '../pages/Profile';
 
 import { PATH } from '../constants/path';
 import Album from '../pages/Album';
-import { element } from 'prop-types';
 import AlbumCards from '../pages/AlbumCards';
 
 export const router = createBrowserRouter([
