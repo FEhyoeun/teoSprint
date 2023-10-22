@@ -128,6 +128,21 @@ export default function GlobalCSS() {
           border-collapse: collapse;
           border-spacing: 0;
         }
+        a {
+          text-decoration-line: none;
+        }
+        a:link {
+          color: black;
+        }
+        a:visited {
+          color: black;
+        }
+        a:hover {
+          color: black;
+        }
+        a:active {
+          color: black;
+        }
       `}
     />
   );
