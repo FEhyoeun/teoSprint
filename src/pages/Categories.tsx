@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { data } from '../components/category/mock.json';
-import { Outlet, useNavigate } from 'react-router-dom';
+import { Outlet, useNavigate, useParams } from 'react-router-dom';
 import styled from '@emotion/styled';
 import { PATH } from '../constants/path';
 
@@ -22,13 +22,10 @@ const StyledCategoryItem = styled.input`
 `;
 
 export const Categories = () => {
-  const [category, setCategory] = useState<string | null>(null);
+  const { category } = useParams();
   const navigate = useNavigate();
 
-  const handleCateogryClick = (category: string) => {
-    navigate(`/${PATH.CATEGORIES}/${category}`);
-    setCategory(category);
-  };
+  const handleCateogryClick = (category: string) => navigate(`/${PATH.CATEGORIES}/${category}`);
 
   if (category) {
     return (
