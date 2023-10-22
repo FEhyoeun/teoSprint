@@ -142,6 +142,7 @@ export default function GlobalCSS() {
         }
         a:active {
           color: black;
+        }
         *{
           box-sizing: border-box;
         }
@@ -152,5 +153,5 @@ export default function GlobalCSS() {
         }
       `}
     />
-  );
+  )
 }
