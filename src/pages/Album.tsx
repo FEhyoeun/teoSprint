@@ -1,5 +1,4 @@
 import styled from '@emotion/styled';
-import { useEffect } from 'react';
 import { Outlet } from 'react-router';
 export default function Album() {
     return (
