@@ -1,7 +1,13 @@
-import React from 'react';
+import React, { MouseEventHandler } from 'react';
 import styled from '@emotion/styled';
 
 import { Card as CardType } from '../../types/card';
+
+interface CardItem {
+  data: CardType;
+  setSelectData: (val: CardType) => void;
+  setShowModal: (val: boolean) => void;
+}
 
 const StyledCardItem = styled.div`
   display: flex;
@@ -17,6 +23,7 @@ const StyledCardItem = styled.div`
   border-radius: 15px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   align-items: center;
+  cursor: pointer;
 `;
 
 const StyledCardImg = styled.img`
@@ -32,11 +39,16 @@ const StyledCardName = styled.div`
   font-size: 30px;
 `;
 
-export const CardItem = ({ data }: { data: CardType }) => {
+export const CardItem = ({ data, setShowModal, setSelectData }: CardItem) => {
   const { audio, category, img, name } = data;
 
+  const handleClick = () => {
+    setShowModal(true);
+    setSelectData(data);
+  };
+
   return (
-    <StyledCardItem>
+    <StyledCardItem onClick={handleClick}>
       <StyledCardImg src={img} alt={name} draggable="false" />
       <StyledCardName>{name}</StyledCardName>
     </StyledCardItem>
