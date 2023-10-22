@@ -97,386 +97,236 @@
   },
   {
     "category": "사물",
-    "name": "Desk",
-    "img": "",
+    "name": "가방",
+    "img": "src/assets/card/bag.svg",
     "audio": ""
   },
   {
     "category": "사물",
-    "name": "Chair",
-    "img": "",
+    "name": "냉장고",
+    "img": "src/assets/card/refrigerator.svg",
     "audio": ""
   },
   {
     "category": "사물",
-    "name": "Laptop",
-    "img": "",
+    "name": "놀이터",
+    "img": "src/assets/card/playground.svg",
     "audio": ""
   },
   {
     "category": "사물",
-    "name": "Phone",
-    "img": "",
+    "name": "블록",
+    "img": "src/assets/card/block.svg",
     "audio": ""
   },
   {
     "category": "사물",
-    "name": "TV",
-    "img": "",
+    "name": "빗",
+    "img": "src/assets/card/comb.svg",
     "audio": ""
   },
   {
     "category": "사물",
-    "name": "Car",
-    "img": "",
+    "name": "신발",
+    "img": "src/assets/card/shoes.svg",
     "audio": ""
   },
   {
     "category": "사물",
-    "name": "Bike",
-    "img": "",
+    "name": "안경",
+    "img": "src/assets/card/glasses.svg",
     "audio": ""
   },
   {
     "category": "사물",
-    "name": "Clock",
-    "img": "",
+    "name": "우산",
+    "img": "src/assets/card/umbrella.svg",
     "audio": ""
   },
   {
     "category": "사물",
-    "name": "Pencil",
-    "img": "",
+    "name": "의자",
+    "img": "src/assets/card/chair.svg",
     "audio": ""
   },
   {
     "category": "사물",
-    "name": "Book",
-    "img": "",
+    "name": "자동차",
+    "img": "src/assets/card/car.svg",
     "audio": ""
   },
   {
     "category": "사물",
-    "name": "Camera",
-    "img": "",
+    "name": "침대",
+    "img": "src/assets/card/bed.svg",
     "audio": ""
   },
   {
     "category": "사물",
-    "name": "Headphones",
-    "img": "",
-    "audio": ""
-  },
-  {
-    "category": "사물",
-    "name": "Shoes",
-    "img": "",
-    "audio": ""
-  },
-  {
-    "category": "사물",
-    "name": "Glasses",
-    "img": "",
-    "audio": ""
-  },
-  {
-    "category": "사물",
-    "name": "Bag",
-    "img": "",
-    "audio": ""
-  },
-  {
-    "category": "사물",
-    "name": "Hat",
-    "img": "",
+    "name": "컵",
+    "img": "src/assets/card/cup.svg",
     "audio": ""
   },
   {
     "category": "가족",
-    "name": "Father",
-    "img": "",
+    "name": "누나",
+    "img": "src/assets/card/sister.svg",
     "audio": ""
   },
   {
     "category": "가족",
-    "name": "Mother",
-    "img": "",
+    "name": "동생",
+    "img": "src/assets/card/little_brother.svg",
     "audio": ""
   },
   {
     "category": "가족",
-    "name": "Brother",
-    "img": "",
+    "name": "아빠",
+    "img": "src/assets/card/father.svg",
     "audio": ""
   },
   {
     "category": "가족",
-    "name": "Sister",
-    "img": "",
+    "name": "엄마",
+    "img": "src/assets/card/mother.svg",
     "audio": ""
   },
   {
     "category": "가족",
-    "name": "Grandfather",
-    "img": "",
+    "name": "할머니",
+    "img": "src/assets/card/grandma.svg",
     "audio": ""
   },
   {
     "category": "가족",
-    "name": "Grandmother",
-    "img": "",
+    "name": "할아버지",
+    "img": "src/assets/card/grandfather.svg",
     "audio": ""
   },
   {
     "category": "가족",
-    "name": "Uncle",
-    "img": "",
-    "audio": ""
-  },
-  {
-    "category": "가족",
-    "name": "Aunt",
-    "img": "",
-    "audio": ""
-  },
-  {
-    "category": "가족",
-    "name": "Cousin",
-    "img": "",
-    "audio": ""
-  },
-  {
-    "category": "가족",
-    "name": "Nephew",
-    "img": "",
-    "audio": ""
-  },
-  {
-    "category": "가족",
-    "name": "Niece",
-    "img": "",
-    "audio": ""
-  },
-  {
-    "category": "가족",
-    "name": "Son",
-    "img": "",
-    "audio": ""
-  },
-  {
-    "category": "가족",
-    "name": "Daughter",
-    "img": "",
-    "audio": ""
-  },
-  {
-    "category": "가족",
-    "name": "Wife",
-    "img": "",
-    "audio": ""
-  },
-  {
-    "category": "가족",
-    "name": "Husband",
-    "img": "",
-    "audio": ""
-  },
-  {
-    "category": "가족",
-    "name": "Stepmother",
-    "img": "",
+    "name": "형",
+    "img": "src/assets/card/older_brother.svg",
     "audio": ""
   },
   {
     "category": "색깔",
-    "name": "Red",
-    "img": "",
+    "name": "검정",
+    "img": "src/assets/card/black.svg",
     "audio": ""
   },
   {
     "category": "색깔",
-    "name": "Blue",
-    "img": "",
+    "name": "노랑",
+    "img": "src/assets/card/yellow.svg",
     "audio": ""
   },
   {
     "category": "색깔",
-    "name": "Green",
-    "img": "",
+    "name": "보라",
+    "img": "src/assets/card/purple.svg",
     "audio": ""
   },
   {
     "category": "색깔",
-    "name": "Yellow",
-    "img": "",
+    "name": "분홍",
+    "img": "src/assets/card/pink.svg",
     "audio": ""
   },
   {
     "category": "색깔",
-    "name": "Orange",
-    "img": "",
+    "name": "빨강",
+    "img": "src/assets/card/red.svg",
     "audio": ""
   },
   {
     "category": "색깔",
-    "name": "Purple",
-    "img": "",
+    "name": "주황",
+    "img": "src/assets/card/orange.svg",
     "audio": ""
   },
   {
     "category": "색깔",
-    "name": "Pink",
-    "img": "",
+    "name": "초록",
+    "img": "src/assets/card/green.svg",
     "audio": ""
   },
   {
     "category": "색깔",
-    "name": "Black",
-    "img": "",
+    "name": "파랑",
+    "img": "src/assets/card/blue.svg",
     "audio": ""
   },
   {
     "category": "색깔",
-    "name": "White",
-    "img": "",
+    "name": "하늘",
+    "img": "src/assets/card/sky.svg",
     "audio": ""
   },
   {
     "category": "색깔",
-    "name": "Brown",
-    "img": "",
-    "audio": ""
-  },
-  {
-    "category": "색깔",
-    "name": "Gray",
-    "img": "",
-    "audio": ""
-  },
-  {
-    "category": "색깔",
-    "name": "Gold",
-    "img": "",
-    "audio": ""
-  },
-  {
-    "category": "색깔",
-    "name": "Silver",
-    "img": "",
-    "audio": ""
-  },
-  {
-    "category": "색깔",
-    "name": "Cyan",
-    "img": "",
-    "audio": ""
-  },
-  {
-    "category": "색깔",
-    "name": "Magenta",
-    "img": "",
-    "audio": ""
-  },
-  {
-    "category": "색깔",
-    "name": "Indigo",
-    "img": "",
+    "name": "하양",
+    "img": "src/assets/card/white.svg",
     "audio": ""
   },
   {
     "category": "감정",
-    "name": "Happy",
-    "img": "",
+    "name": "기뻐",
+    "img": "src/assets/card/happy.svg",
     "audio": ""
   },
   {
     "category": "감정",
-    "name": "Sad",
-    "img": "",
+    "name": "배고파",
+    "img": "src/assets/card/hungry.svg",
     "audio": ""
   },
   {
     "category": "감정",
-    "name": "Angry",
-    "img": "",
+    "name": "슬퍼",
+    "img": "src/assets/card/sad.svg",
     "audio": ""
   },
   {
     "category": "감정",
-    "name": "Surprised",
-    "img": "",
+    "name": "싫어",
+    "img": "src/assets/card/negative.svg",
     "audio": ""
   },
   {
     "category": "감정",
-    "name": "Scared",
-    "img": "",
+    "name": "아파",
+    "img": "src/assets/card/sick.svg",
     "audio": ""
   },
   {
     "category": "감정",
-    "name": "Excited",
-    "img": "",
+    "name": "울어",
+    "img": "src/assets/card/cry.svg",
     "audio": ""
   },
   {
     "category": "감정",
-    "name": "Nervous",
-    "img": "",
+    "name": "졸려",
+    "img": "src/assets/card/sleepy.svg",
     "audio": ""
   },
   {
     "category": "감정",
-    "name": "Confident",
-    "img": "",
+    "name": "좋아",
+    "img": "src/assets/card/positive.svg",
     "audio": ""
   },
   {
     "category": "감정",
-    "name": "Bored",
-    "img": "",
+    "name": "짜증나",
+    "img": "src/assets/card/annoing.svg",
     "audio": ""
   },
   {
     "category": "감정",
-    "name": "Jealous",
-    "img": "",
-    "audio": ""
-  },
-  {
-    "category": "감정",
-    "name": "Relieved",
-    "img": "",
-    "audio": ""
-  },
-  {
-    "category": "감정",
-    "name": "Grateful",
-    "img": "",
-    "audio": ""
-  },
-  {
-    "category": "감정",
-    "name": "Annoyed",
-    "img": "",
-    "audio": ""
-  },
-  {
-    "category": "감정",
-    "name": "Curious",
-    "img": "",
-    "audio": ""
-  },
-  {
-    "category": "감정",
-    "name": "Overwhelmed",
-    "img": "",
-    "audio": ""
-  },
-  {
-    "category": "감정",
-    "name": "Embarrassed",
-    "img": "",
+    "name": "화나",
+    "img": "src/assets/card/rage.svg",
     "audio": ""
   },
   {
