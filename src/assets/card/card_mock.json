@@ -271,98 +271,62 @@
   },
   {
     "category": "감정",
-    "name": "Happy",
-    "img": "",
+    "name": "기뻐",
+    "img": "src/assets/card/happy.svg",
     "audio": ""
   },
   {
     "category": "감정",
-    "name": "Sad",
-    "img": "",
+    "name": "배고파",
+    "img": "src/assets/card/hungry.svg",
     "audio": ""
   },
   {
     "category": "감정",
-    "name": "Angry",
-    "img": "",
+    "name": "슬퍼",
+    "img": "src/assets/card/sad.svg",
     "audio": ""
   },
   {
     "category": "감정",
-    "name": "Surprised",
-    "img": "",
+    "name": "싫어",
+    "img": "src/assets/card/negative.svg",
     "audio": ""
   },
   {
     "category": "감정",
-    "name": "Scared",
-    "img": "",
+    "name": "아파",
+    "img": "src/assets/card/sick.svg",
     "audio": ""
   },
   {
     "category": "감정",
-    "name": "Excited",
-    "img": "",
+    "name": "울어",
+    "img": "src/assets/card/cry.svg",
     "audio": ""
   },
   {
     "category": "감정",
-    "name": "Nervous",
-    "img": "",
+    "name": "졸려",
+    "img": "src/assets/card/sleepy.svg",
     "audio": ""
   },
   {
     "category": "감정",
-    "name": "Confident",
-    "img": "",
+    "name": "좋아",
+    "img": "src/assets/card/positive.svg",
     "audio": ""
   },
   {
     "category": "감정",
-    "name": "Bored",
-    "img": "",
+    "name": "짜증나",
+    "img": "src/assets/card/annoing.svg",
     "audio": ""
   },
   {
     "category": "감정",
-    "name": "Jealous",
-    "img": "",
-    "audio": ""
-  },
-  {
-    "category": "감정",
-    "name": "Relieved",
-    "img": "",
-    "audio": ""
-  },
-  {
-    "category": "감정",
-    "name": "Grateful",
-    "img": "",
-    "audio": ""
-  },
-  {
-    "category": "감정",
-    "name": "Annoyed",
-    "img": "",
-    "audio": ""
-  },
-  {
-    "category": "감정",
-    "name": "Curious",
-    "img": "",
-    "audio": ""
-  },
-  {
-    "category": "감정",
-    "name": "Overwhelmed",
-    "img": "",
-    "audio": ""
-  },
-  {
-    "category": "감정",
-    "name": "Embarrassed",
-    "img": "",
+    "name": "화나",
+    "img": "src/assets/card/rage.svg",
     "audio": ""
   },
   {
