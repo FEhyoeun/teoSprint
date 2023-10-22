@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { PATH } from '../../constants/path';
 import categoryData from '../category/mock.json';
 import styled from '@emotion/styled';
-import { _mainCol200 } from '../../constants/colors';
+import { _mainCol200, _mainCol300, _mainColBg } from '../../constants/colors';
 
 export default function SideNavBar() {
   return (
@@ -10,7 +10,9 @@ export default function SideNavBar() {
       <NavUl>
         {categoryData.data.map((category) => (
           <NavLi key={category.index}>
-            <NavLink to={`/${PATH.CATEGORIES}/${category.categoryName}`}>{category.icon}</NavLink>
+            <NavLink to={`/${PATH.CATEGORIES}/${category.categoryName}`}>
+              <NavIcon src={category.iconUrl} />
+            </NavLink>
           </NavLi>
         ))}
       </NavUl>
@@ -34,7 +36,7 @@ width: 2rem;
 height: 2rem;
   padding: 0.5rem;
   margin: 3px 0;
-  background-color: yellow;
+  background-color: ${_mainCol200};
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -43,4 +45,11 @@ height: 2rem;
 
 const NavLink = styled(Link)`
   text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`
+
+const NavIcon = styled.img`
+  width: 90%;
 `
