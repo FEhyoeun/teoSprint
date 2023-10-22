@@ -19,11 +19,19 @@ const StyledPageButton = styled.button<{ isNext: boolean }>`
   border: 0;
 `;
 
-const Next = () => {
-  return <StyledPageButton isNext>{'<'}</StyledPageButton>;
+const Next = ({ onClick }: { onClick: () => void }) => {
+  return (
+    <StyledPageButton isNext onClick={onClick}>
+      {'<'}
+    </StyledPageButton>
+  );
 };
-const Prev = () => {
-  return <StyledPageButton isNext={false}>{'>'}</StyledPageButton>;
+const Prev = ({ onClick }: { onClick: () => void }) => {
+  return (
+    <StyledPageButton isNext={false} onClick={onClick}>
+      {'>'}
+    </StyledPageButton>
+  );
 };
 
 export const CardPage = { Next, Prev };
