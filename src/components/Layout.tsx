@@ -12,7 +12,6 @@ export const Layout = () => {
   const { pathname } = useLocation();
   const param = pathname.includes(PATH.CATEGORIES) ? PATH.CATEGORIES : PATH.ALBUM;
 
-  }
   return (
     <MainWrapper>
       <Header>
