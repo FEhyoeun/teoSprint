@@ -3,6 +3,7 @@ import styled from '@emotion/styled';
 import { useNavigate } from 'react-router-dom';
 
 import { PATH } from '../constants/path';
+import { ProfileModal } from '../components/profileModal/ProfileModal';
 
 const Container = styled.div`
   width: 100%;
@@ -26,14 +27,14 @@ const ProjectName = styled.div`
   text-align: center;
   font-size: 48px;
 `;
-const ProfileImage = styled.image`
+const ProfileImage = styled.img`
   display: flex;
   width: 300px;
   height: 300px;
   border: 1px solid lightgray;
   border-radius: 50%;
   margin: 25px 0;
-  background-image: url('src/assets/face.svg');
+  /* background-image: url('src/assets/face.svg'); */
   background-size: 80% 80%;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -61,6 +62,7 @@ const SubmitBtn = styled.button`
 
 const Profile = () => {
   const [name, setName] = useState<string>('');
+  const [profileImg, setProfileImg] = useState('src/assets/face.svg');
   const navigate = useNavigate();
 
   const handleSubmit = (e: React.MouseEvent) => {
@@ -73,12 +75,16 @@ const Profile = () => {
     navigate(`/${PATH.CATEGORIES}`);
   };
 
+  const handleSelect = (url: string) => setProfileImg(url);
+
   return (
     <Container>
       <Logo />
       <Wrapper>
         <ProjectName>프로필</ProjectName>
-        <ProfileImage />
+        <ProfileModal onImgSelect={handleSelect}>
+          <ProfileImage src={profileImg} />
+        </ProfileModal>
         <ProfileName>이름</ProfileName>
         <InputName
           placeholder="이름을 입력해주세요"
