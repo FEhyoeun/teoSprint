@@ -9,10 +9,6 @@ import { _mainCol300, _mainCol400, _mainColBg } from '../constants/colors';
 import { PATH } from '../constants/path';
 
 export const Layout = () => {
-  const onPlayBtnClick = () => {
-    alert('준비중인 서비스 입니다');
-  };
-
   const { pathname } = useLocation();
   console.log(pathname);
   const param = pathname.includes(PATH.CATEGORIES) ? PATH.CATEGORIES : PATH.ALBUM;
@@ -24,8 +20,6 @@ export const Layout = () => {
         <TopNavBar />
       </Header>
       <SideSection>
-        <PlayBtn onClick={onPlayBtnClick}>
-          <span>▶️</span></PlayBtn>
         <SideNavBar />
       </SideSection>
       <OutletWrapper param={param}>
@@ -74,17 +68,3 @@ const OutletWrapper = styled.section<{ param: string }>`
   grid-row: 2/3;
   background-color: ${(props) => (props.param === PATH.CATEGORIES ? _mainCol300 : _mainCol400)};
 `;
-
-const PlayBtn = styled.button`
-width: 2.5rem;
-height: 2.5rem;
-  background: none;
-  border: 2px solid black;
-  border-radius: 50%;
-  span{
-font-size: large;
-  }
-  &:hover{
-    cursor: pointer;
-  }
-`

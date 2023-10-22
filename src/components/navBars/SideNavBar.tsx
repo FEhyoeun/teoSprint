@@ -6,9 +6,15 @@ import { _mainCol200 } from '../../constants/colors';
 
 export default function SideNavBar() {
   const { pathname } = useLocation();
+  const onPlayBtnClick = () => {
+    alert('준비중인 서비스 입니다');
+  };
+
   return (
     <NavWrapper>
       <NavUl>
+        <PlayBtn onClick={onPlayBtnClick}>
+          <span>▶️</span></PlayBtn>
         {categoryData.data.map((category) => (
           <NavLi key={category.index}>
             <NavLink to={`/${pathname.includes("/categories") ? PATH.CATEGORIES : PATH.ALBUM}/${category.categoryName}`}>
@@ -23,31 +29,48 @@ export default function SideNavBar() {
 
 const NavWrapper = styled.nav`
 width: 100%;
+height: 100%;
+padding: 0.5rem 0 ;
 `
 const NavUl = styled.ul`
 width: 100%;
+height: 100%;
 display: flex;
 flex-direction: column;
-justify-content: space-between;
+justify-content: space-around;
+align-items: center;
+`
+const PlayBtn = styled.button`
+width: 4rem;
+height: 4rem;
+  background: none;
+  border: 3px solid black;
+  border-radius: 50%;
+  background-color: yellow;
+  margin: 1rem 0;
+  span{
+font-size: large;
+  }
+  &:hover{
+    cursor: pointer;
+  }`
+
+const NavLi = styled.li`
+width: 4rem;
+height: 4rem;
+padding: 0.5rem;
+margin: 3px 0;
+background-color: ${_mainCol200};
+border-radius: 50%;
+display: flex;
+justify-content: center;
 align-items: center;
 `
 
-const NavLi = styled.li`
-width: 2rem;
-height: 2rem;
-  padding: 0.5rem;
-  margin: 3px 0;
-  background-color: ${_mainCol200};
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`
-
 const NavLink = styled(Link)`
-  text-decoration: none;
+text-decoration: none;
 `
 
 const NavIcon = styled.img`
-  width: 95%;
+width: 95%;
 `
