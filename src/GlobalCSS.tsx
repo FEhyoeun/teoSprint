@@ -142,6 +142,13 @@ export default function GlobalCSS() {
         }
         a:active {
           color: black;
+        *{
+          box-sizing: border-box;
+        }
+        body{
+          display: flex;
+          justify-content: center;
+          align-items: center;
         }
       `}
     />

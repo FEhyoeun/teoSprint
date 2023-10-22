@@ -14,6 +14,7 @@ const StyledCategoryWrapper = styled.div`
   justify-content: center;
   align-items: center;
   gap: 20px;
+  overflow: hidden;
 `;
 
 export const Category = () => {
