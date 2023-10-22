@@ -211,98 +211,62 @@
   },
   {
     "category": "색깔",
-    "name": "Red",
-    "img": "",
+    "name": "검정",
+    "img": "src/assets/card/black.svg",
     "audio": ""
   },
   {
     "category": "색깔",
-    "name": "Blue",
-    "img": "",
+    "name": "노랑",
+    "img": "src/assets/card/yellow.svg",
     "audio": ""
   },
   {
     "category": "색깔",
-    "name": "Green",
-    "img": "",
+    "name": "보라",
+    "img": "src/assets/card/purple.svg",
     "audio": ""
   },
   {
     "category": "색깔",
-    "name": "Yellow",
-    "img": "",
+    "name": "분홍",
+    "img": "src/assets/card/pink.svg",
     "audio": ""
   },
   {
     "category": "색깔",
-    "name": "Orange",
-    "img": "",
+    "name": "빨강",
+    "img": "src/assets/card/red.svg",
     "audio": ""
   },
   {
     "category": "색깔",
-    "name": "Purple",
-    "img": "",
+    "name": "주황",
+    "img": "src/assets/card/orange.svg",
     "audio": ""
   },
   {
     "category": "색깔",
-    "name": "Pink",
-    "img": "",
+    "name": "초록",
+    "img": "src/assets/card/green.svg",
     "audio": ""
   },
   {
     "category": "색깔",
-    "name": "Black",
-    "img": "",
+    "name": "파랑",
+    "img": "src/assets/card/blue.svg",
     "audio": ""
   },
   {
     "category": "색깔",
-    "name": "White",
-    "img": "",
+    "name": "하늘",
+    "img": "src/assets/card/sky.svg",
     "audio": ""
   },
   {
     "category": "색깔",
-    "name": "Brown",
-    "img": "",
-    "audio": ""
-  },
-  {
-    "category": "색깔",
-    "name": "Gray",
-    "img": "",
-    "audio": ""
-  },
-  {
-    "category": "색깔",
-    "name": "Gold",
-    "img": "",
-    "audio": ""
-  },
-  {
-    "category": "색깔",
-    "name": "Silver",
-    "img": "",
-    "audio": ""
-  },
-  {
-    "category": "색깔",
-    "name": "Cyan",
-    "img": "",
-    "audio": ""
-  },
-  {
-    "category": "색깔",
-    "name": "Magenta",
-    "img": "",
-    "audio": ""
-  },
-  {
-    "category": "색깔",
-    "name": "Indigo",
-    "img": "",
+    "name": "하양",
+    "img": "src/assets/card/white.svg",
     "audio": ""
   },
   {
