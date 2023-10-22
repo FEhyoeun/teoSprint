@@ -24,7 +24,7 @@ const ProjectName = styled.div`
   text-align: center;
   font-size: 48px;
 `;
-const ProfileImage = styled.div`
+const ProfileImage = styled.image`
   display: flex;
   width: 300px;
   height: 300px;
