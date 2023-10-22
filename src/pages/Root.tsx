@@ -27,7 +27,7 @@ export const Root = () => {
     if (storedName) {
       navigate(`/${PATH.CATEGORIES}`);
     } else {
-      navigate(`/${PATH.CATEGORIES}`);
+      navigate(`/${PATH.PROFILE}`);
     }
   }, [navigate]);
   return (
