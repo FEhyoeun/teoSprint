@@ -9,6 +9,7 @@ import CARD_MOCK from '../assets/card/card_mock.json';
 
 const StyledCategoryWrapper = styled.div`
   position: relative;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
