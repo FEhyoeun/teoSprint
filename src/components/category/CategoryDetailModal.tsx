@@ -3,11 +3,6 @@ import styled from '@emotion/styled';
 import Icon from '../common/Icon';
 import { Card as CardType } from '../../types/card';
 
-interface CategoryDetailModal {
-  data: CardType | null;
-  setShowModal: (val: boolean) => void;
-}
-
 const Background = styled.div`
   position: absolute;
   top: 0;
@@ -56,14 +51,16 @@ const CardName = styled.div`
   font-size: 64px;
 `;
 
-const CategoryDetailModal = ({ data, setShowModal }: CategoryDetailModal) => {
+const CategoryDetailModal = ({ data }: { data: CardType }) => {
+  const handleTTSClick = () => alert('준비중입니다.');
+
   return (
     <Background>
       <Wrapper>
         <CardWrapper>
           <CardTopNav>
-            <IconStyled name="volume-2" size={30} onClick={() => alert('준비중입니다.')} />
-            <IconStyled name="x" size={30} onClick={() => setShowModal(false)} />
+            <input type="image" alt="speech to TTS" onClick={handleTTSClick} />
+            <input type="image" alt="close card modal" onClick={handleTTSClick} />
           </CardTopNav>
           <CardImage />
           <CardName>{data?.name}</CardName>
