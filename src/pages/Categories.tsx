@@ -4,14 +4,16 @@ import styled from '@emotion/styled';
 import { PATH } from '../constants/path';
 
 const StyledCategories = styled.div`
+  position: relative;
   width: 100%;
   height: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 15px;
-  flex-wrap: wrap;
-  overflow: auto;
+  gap: 20px;
+  overflow: hidden;
+
   /* width */
   ::-webkit-scrollbar {
     width: 15px;
@@ -26,8 +28,6 @@ const StyledCategories = styled.div`
 
 const StyledCategoryItem = styled.input`
   border-radius: 5px;
-  width: 150px;
-  height: 180px;
   cursor: pointer;
 `;
 

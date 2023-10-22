@@ -10,11 +10,12 @@ import CARD_MOCK from '../assets/card/card_mock.json';
 const StyledCategoryWrapper = styled.div`
   position: relative;
   width: 100%;
+  height: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
   overflow: hidden;
 `;
 
