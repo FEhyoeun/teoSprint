@@ -12,5 +12,7 @@ module.exports = {
   ignorePatterns: ['dist', '.eslintrc.cjs'],
   parser: '@typescript-eslint/parser',
   plugins: ['@typescript-eslint', 'react', 'react-hooks', 'prettier'], // 새로 추가
-
-}
+  rules: {
+    'react/react-in-jsx-scope': 'off',
+  },
+};
