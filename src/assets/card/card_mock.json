@@ -1,768 +1,768 @@
 [
   {
-    "category": "animal",
-    "name": "Dog",
-    "img": "",
+    "category": "동물",
+    "name": "곰",
+    "img": "src/assets/card/bear.svg",
     "audio": ""
   },
   {
-    "category": "animal",
-    "name": "Cat",
-    "img": "",
+    "category": "동물",
+    "name": "고양이",
+    "img": "src/assets/card/cat.svg",
     "audio": ""
   },
   {
-    "category": "animal",
-    "name": "Fish",
-    "img": "",
+    "category": "동물",
+    "name": "소",
+    "img": "src/assets/card/cow.svg",
     "audio": ""
   },
   {
-    "category": "animal",
-    "name": "Elephant",
-    "img": "",
+    "category": "동물",
+    "name": "개",
+    "img": "src/assets/card/dog.svg",
     "audio": ""
   },
   {
-    "category": "animal",
-    "name": "Tiger",
-    "img": "",
+    "category": "동물",
+    "name": "코끼리",
+    "img": "src/assets/card/elephant.svg",
     "audio": ""
   },
   {
-    "category": "animal",
-    "name": "Lion",
-    "img": "",
+    "category": "동물",
+    "name": "기린",
+    "img": "src/assets/card/giraffe.svg",
     "audio": ""
   },
   {
-    "category": "animal",
-    "name": "Panda",
-    "img": "",
+    "category": "동물",
+    "name": "말",
+    "img": "src/assets/card/horse.svg",
     "audio": ""
   },
   {
-    "category": "animal",
-    "name": "Zebra",
-    "img": "",
+    "category": "동물",
+    "name": "원숭이",
+    "img": "src/assets/card/monkey.svg",
     "audio": ""
   },
   {
-    "category": "animal",
-    "name": "Kangaroo",
-    "img": "",
+    "category": "동물",
+    "name": "팽귄",
+    "img": "src/assets/card/penguin.svg",
     "audio": ""
   },
   {
-    "category": "animal",
-    "name": "Giraffe",
-    "img": "",
+    "category": "동물",
+    "name": "돼지",
+    "img": "src/assets/card/pig.svg",
     "audio": ""
   },
   {
-    "category": "animal",
-    "name": "Bear",
-    "img": "",
+    "category": "동물",
+    "name": "토끼",
+    "img": "src/assets/card/rabbit.svg",
     "audio": ""
   },
   {
-    "category": "animal",
-    "name": "Horse",
-    "img": "",
+    "category": "동물",
+    "name": "새우",
+    "img": "src/assets/card/shrimp.svg",
     "audio": ""
   },
   {
-    "category": "animal",
-    "name": "Penguin",
-    "img": "",
+    "category": "동물",
+    "name": "뱀",
+    "img": "src/assets/card/snake.svg",
     "audio": ""
   },
   {
-    "category": "animal",
-    "name": "Dolphin",
-    "img": "",
+    "category": "동물",
+    "name": "다람쥐",
+    "img": "src/assets/card/squirrel.svg",
     "audio": ""
   },
   {
-    "category": "animal",
-    "name": "Whale",
-    "img": "",
+    "category": "동물",
+    "name": "거북이",
+    "img": "src/assets/card/turtle.svg",
     "audio": ""
   },
   {
-    "category": "animal",
-    "name": "Shark",
-    "img": "",
+    "category": "동물",
+    "name": "고래",
+    "img": "src/assets/card/whale.svg",
     "audio": ""
   },
   {
-    "category": "object",
+    "category": "사물",
     "name": "Desk",
     "img": "",
     "audio": ""
   },
   {
-    "category": "object",
+    "category": "사물",
     "name": "Chair",
     "img": "",
     "audio": ""
   },
   {
-    "category": "object",
+    "category": "사물",
     "name": "Laptop",
     "img": "",
     "audio": ""
   },
   {
-    "category": "object",
+    "category": "사물",
     "name": "Phone",
     "img": "",
     "audio": ""
   },
   {
-    "category": "object",
+    "category": "사물",
     "name": "TV",
     "img": "",
     "audio": ""
   },
   {
-    "category": "object",
+    "category": "사물",
     "name": "Car",
     "img": "",
     "audio": ""
   },
   {
-    "category": "object",
+    "category": "사물",
     "name": "Bike",
     "img": "",
     "audio": ""
   },
   {
-    "category": "object",
+    "category": "사물",
     "name": "Clock",
     "img": "",
     "audio": ""
   },
   {
-    "category": "object",
+    "category": "사물",
     "name": "Pencil",
     "img": "",
     "audio": ""
   },
   {
-    "category": "object",
+    "category": "사물",
     "name": "Book",
     "img": "",
     "audio": ""
   },
   {
-    "category": "object",
+    "category": "사물",
     "name": "Camera",
     "img": "",
     "audio": ""
   },
   {
-    "category": "object",
+    "category": "사물",
     "name": "Headphones",
     "img": "",
     "audio": ""
   },
   {
-    "category": "object",
+    "category": "사물",
     "name": "Shoes",
     "img": "",
     "audio": ""
   },
   {
-    "category": "object",
+    "category": "사물",
     "name": "Glasses",
     "img": "",
     "audio": ""
   },
   {
-    "category": "object",
+    "category": "사물",
     "name": "Bag",
     "img": "",
     "audio": ""
   },
   {
-    "category": "object",
+    "category": "사물",
     "name": "Hat",
     "img": "",
     "audio": ""
   },
   {
-    "category": "family",
+    "category": "가족",
     "name": "Father",
     "img": "",
     "audio": ""
   },
   {
-    "category": "family",
+    "category": "가족",
     "name": "Mother",
     "img": "",
     "audio": ""
   },
   {
-    "category": "family",
+    "category": "가족",
     "name": "Brother",
     "img": "",
     "audio": ""
   },
   {
-    "category": "family",
+    "category": "가족",
     "name": "Sister",
     "img": "",
     "audio": ""
   },
   {
-    "category": "family",
+    "category": "가족",
     "name": "Grandfather",
     "img": "",
     "audio": ""
   },
   {
-    "category": "family",
+    "category": "가족",
     "name": "Grandmother",
     "img": "",
     "audio": ""
   },
   {
-    "category": "family",
+    "category": "가족",
     "name": "Uncle",
     "img": "",
     "audio": ""
   },
   {
-    "category": "family",
+    "category": "가족",
     "name": "Aunt",
     "img": "",
     "audio": ""
   },
   {
-    "category": "family",
+    "category": "가족",
     "name": "Cousin",
     "img": "",
     "audio": ""
   },
   {
-    "category": "family",
+    "category": "가족",
     "name": "Nephew",
     "img": "",
     "audio": ""
   },
   {
-    "category": "family",
+    "category": "가족",
     "name": "Niece",
     "img": "",
     "audio": ""
   },
   {
-    "category": "family",
+    "category": "가족",
     "name": "Son",
     "img": "",
     "audio": ""
   },
   {
-    "category": "family",
+    "category": "가족",
     "name": "Daughter",
     "img": "",
     "audio": ""
   },
   {
-    "category": "family",
+    "category": "가족",
     "name": "Wife",
     "img": "",
     "audio": ""
   },
   {
-    "category": "family",
+    "category": "가족",
     "name": "Husband",
     "img": "",
     "audio": ""
   },
   {
-    "category": "family",
+    "category": "가족",
     "name": "Stepmother",
     "img": "",
     "audio": ""
   },
   {
-    "category": "color",
+    "category": "색깔",
     "name": "Red",
     "img": "",
     "audio": ""
   },
   {
-    "category": "color",
+    "category": "색깔",
     "name": "Blue",
     "img": "",
     "audio": ""
   },
   {
-    "category": "color",
+    "category": "색깔",
     "name": "Green",
     "img": "",
     "audio": ""
   },
   {
-    "category": "color",
+    "category": "색깔",
     "name": "Yellow",
     "img": "",
     "audio": ""
   },
   {
-    "category": "color",
+    "category": "색깔",
     "name": "Orange",
     "img": "",
     "audio": ""
   },
   {
-    "category": "color",
+    "category": "색깔",
     "name": "Purple",
     "img": "",
     "audio": ""
   },
   {
-    "category": "color",
+    "category": "색깔",
     "name": "Pink",
     "img": "",
     "audio": ""
   },
   {
-    "category": "color",
+    "category": "색깔",
     "name": "Black",
     "img": "",
     "audio": ""
   },
   {
-    "category": "color",
+    "category": "색깔",
     "name": "White",
     "img": "",
     "audio": ""
   },
   {
-    "category": "color",
+    "category": "색깔",
     "name": "Brown",
     "img": "",
     "audio": ""
   },
   {
-    "category": "color",
+    "category": "색깔",
     "name": "Gray",
     "img": "",
     "audio": ""
   },
   {
-    "category": "color",
+    "category": "색깔",
     "name": "Gold",
     "img": "",
     "audio": ""
   },
   {
-    "category": "color",
+    "category": "색깔",
     "name": "Silver",
     "img": "",
     "audio": ""
   },
   {
-    "category": "color",
+    "category": "색깔",
     "name": "Cyan",
     "img": "",
     "audio": ""
   },
   {
-    "category": "color",
+    "category": "색깔",
     "name": "Magenta",
     "img": "",
     "audio": ""
   },
   {
-    "category": "color",
+    "category": "색깔",
     "name": "Indigo",
     "img": "",
     "audio": ""
   },
   {
-    "category": "emotion",
+    "category": "감정",
     "name": "Happy",
     "img": "",
     "audio": ""
   },
   {
-    "category": "emotion",
+    "category": "감정",
     "name": "Sad",
     "img": "",
     "audio": ""
   },
   {
-    "category": "emotion",
+    "category": "감정",
     "name": "Angry",
     "img": "",
     "audio": ""
   },
   {
-    "category": "emotion",
+    "category": "감정",
     "name": "Surprised",
     "img": "",
     "audio": ""
   },
   {
-    "category": "emotion",
+    "category": "감정",
     "name": "Scared",
     "img": "",
     "audio": ""
   },
   {
-    "category": "emotion",
+    "category": "감정",
     "name": "Excited",
     "img": "",
     "audio": ""
   },
   {
-    "category": "emotion",
+    "category": "감정",
     "name": "Nervous",
     "img": "",
     "audio": ""
   },
   {
-    "category": "emotion",
+    "category": "감정",
     "name": "Confident",
     "img": "",
     "audio": ""
   },
   {
-    "category": "emotion",
+    "category": "감정",
     "name": "Bored",
     "img": "",
     "audio": ""
   },
   {
-    "category": "emotion",
+    "category": "감정",
     "name": "Jealous",
     "img": "",
     "audio": ""
   },
   {
-    "category": "emotion",
+    "category": "감정",
     "name": "Relieved",
     "img": "",
     "audio": ""
   },
   {
-    "category": "emotion",
+    "category": "감정",
     "name": "Grateful",
     "img": "",
     "audio": ""
   },
   {
-    "category": "emotion",
+    "category": "감정",
     "name": "Annoyed",
     "img": "",
     "audio": ""
   },
   {
-    "category": "emotion",
+    "category": "감정",
     "name": "Curious",
     "img": "",
     "audio": ""
   },
   {
-    "category": "emotion",
+    "category": "감정",
     "name": "Overwhelmed",
     "img": "",
     "audio": ""
   },
   {
-    "category": "emotion",
+    "category": "감정",
     "name": "Embarrassed",
     "img": "",
     "audio": ""
   },
   {
-    "category": "weather",
+    "category": "날씨",
     "name": "Sunny",
     "img": "",
     "audio": ""
   },
   {
-    "category": "weather",
+    "category": "날씨",
     "name": "Cloudy",
     "img": "",
     "audio": ""
   },
   {
-    "category": "weather",
+    "category": "날씨",
     "name": "Rainy",
     "img": "",
     "audio": ""
   },
   {
-    "category": "weather",
+    "category": "날씨",
     "name": "Snowy",
     "img": "",
     "audio": ""
   },
   {
-    "category": "weather",
+    "category": "날씨",
     "name": "Windy",
     "img": "",
     "audio": ""
   },
   {
-    "category": "weather",
+    "category": "날씨",
     "name": "Thunderstorm",
     "img": "",
     "audio": ""
   },
   {
-    "category": "weather",
+    "category": "날씨",
     "name": "Foggy",
     "img": "",
     "audio": ""
   },
   {
-    "category": "weather",
+    "category": "날씨",
     "name": "Hail",
     "img": "",
     "audio": ""
   },
   {
-    "category": "weather",
+    "category": "날씨",
     "name": "Mist",
     "img": "",
     "audio": ""
   },
   {
-    "category": "weather",
+    "category": "날씨",
     "name": "Tornado",
     "img": "",
     "audio": ""
   },
   {
-    "category": "weather",
+    "category": "날씨",
     "name": "Drought",
     "img": "",
     "audio": ""
   },
   {
-    "category": "weather",
+    "category": "날씨",
     "name": "Humid",
     "img": "",
     "audio": ""
   },
   {
-    "category": "weather",
+    "category": "날씨",
     "name": "Hot",
     "img": "",
     "audio": ""
   },
   {
-    "category": "weather",
+    "category": "날씨",
     "name": "Cold",
     "img": "",
     "audio": ""
   },
   {
-    "category": "weather",
+    "category": "날씨",
     "name": "Icy",
     "img": "",
     "audio": ""
   },
   {
-    "category": "weather",
+    "category": "날씨",
     "name": "Blizzard",
     "img": "",
     "audio": ""
   },
   {
-    "category": "number",
+    "category": "숫자",
     "name": "One",
     "img": "",
     "audio": ""
   },
   {
-    "category": "number",
+    "category": "숫자",
     "name": "Two",
     "img": "",
     "audio": ""
   },
   {
-    "category": "number",
+    "category": "숫자",
     "name": "Three",
     "img": "",
     "audio": ""
   },
   {
-    "category": "number",
+    "category": "숫자",
     "name": "Four",
     "img": "",
     "audio": ""
   },
   {
-    "category": "number",
+    "category": "숫자",
     "name": "Five",
     "img": "",
     "audio": ""
   },
   {
-    "category": "number",
+    "category": "숫자",
     "name": "Six",
     "img": "",
     "audio": ""
   },
   {
-    "category": "number",
+    "category": "숫자",
     "name": "Seven",
     "img": "",
     "audio": ""
   },
   {
-    "category": "number",
+    "category": "숫자",
     "name": "Eight",
     "img": "",
     "audio": ""
   },
   {
-    "category": "number",
+    "category": "숫자",
     "name": "Nine",
     "img": "",
     "audio": ""
   },
   {
-    "category": "number",
+    "category": "숫자",
     "name": "Ten",
     "img": "",
     "audio": ""
   },
   {
-    "category": "number",
+    "category": "숫자",
     "name": "Eleven",
     "img": "",
     "audio": ""
   },
   {
-    "category": "number",
+    "category": "숫자",
     "name": "Twelve",
     "img": "",
     "audio": ""
   },
   {
-    "category": "number",
+    "category": "숫자",
     "name": "Thirteen",
     "img": "",
     "audio": ""
   },
   {
-    "category": "number",
+    "category": "숫자",
     "name": "Fourteen",
     "img": "",
     "audio": ""
   },
   {
-    "category": "number",
+    "category": "숫자",
     "name": "Fifteen",
     "img": "",
     "audio": ""
   },
   {
-    "category": "number",
+    "category": "숫자",
     "name": "Sixteen",
     "img": "",
     "audio": ""
   },
   {
-    "category": "food",
+    "category": "음식",
     "name": "Pizza",
     "img": "",
     "audio": ""
   },
   {
-    "category": "food",
+    "category": "음식",
     "name": "Hamburger",
     "img": "",
     "audio": ""
   },
   {
-    "category": "food",
+    "category": "음식",
     "name": "Sushi",
     "img": "",
     "audio": ""
   },
   {
-    "category": "food",
+    "category": "음식",
     "name": "Pasta",
     "img": "",
     "audio": ""
   },
   {
-    "category": "food",
+    "category": "음식",
     "name": "Steak",
     "img": "",
     "audio": ""
   },
   {
-    "category": "food",
+    "category": "음식",
     "name": "Salad",
     "img": "",
     "audio": ""
   },
   {
-    "category": "food",
+    "category": "음식",
     "name": "Rice",
     "img": "",
     "audio": ""
   },
   {
-    "category": "food",
+    "category": "음식",
     "name": "Chicken",
     "img": "",
     "audio": ""
   },
   {
-    "category": "food",
+    "category": "음식",
     "name": "Soup",
     "img": "",
     "audio": ""
   },
   {
-    "category": "food",
+    "category": "음식",
     "name": "Sandwich",
     "img": "",
     "audio": ""
   },
   {
-    "category": "food",
+    "category": "음식",
     "name": "Ice Cream",
     "img": "",
     "audio": ""
   },
   {
-    "category": "food",
+    "category": "음식",
     "name": "Cake",
     "img": "",
     "audio": ""
   },
   {
-    "category": "food",
+    "category": "음식",
     "name": "Fish",
     "img": "",
     "audio": ""
   },
   {
-    "category": "food",
+    "category": "음식",
     "name": "Bread",
     "img": "",
     "audio": ""
   },
   {
-    "category": "food",
+    "category": "음식",
     "name": "Cheese",
     "img": "",
     "audio": ""
   },
   {
-    "category": "food",
+    "category": "음식",
     "name": "Fruit",
     "img": "",
     "audio": ""

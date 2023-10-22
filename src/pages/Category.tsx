@@ -2,13 +2,10 @@ import React, { useState } from 'react';
 import styled from '@emotion/styled';
 import { useParams } from 'react-router-dom';
 
-import { Card as CardType } from '../types/card';
-
 import { CardItem } from '../components/card/CardItem';
 import { CardPage } from '../components/card/CardPage';
 
-import CARD_MOCK from '../assets/mock.json';
-import CategoryDetailModal from '../components/category/CategoryDetailModal';
+import CARD_MOCK from '../assets/card/card_mock.json';
 
 const StyledCategoryWrapper = styled.div`
   position: relative;
@@ -21,8 +18,6 @@ const StyledCategoryWrapper = styled.div`
 
 export const Category = () => {
   const { category } = useParams();
-  const [showModal, setShowModal] = useState(false);
-  const [selectData, setSelectData] = useState<CardType | null>(null);
   const [currentPage, setCurrentPage] = useState(0); // 계산 편의성을 위해 첫 페이지를 0으로 설정
 
   const nextPage = currentPage + 1;
@@ -41,23 +36,15 @@ export const Category = () => {
   const endIndex = nextPage * 8;
 
   return (
-    <>
-      <StyledCategoryWrapper>
-        {hasNextPage && <CardPage.Next onClick={handleClickNext} />}
-        {hasPrevPage && <CardPage.Prev onClick={handleClickPrev} />}
+    <StyledCategoryWrapper>
+      {hasNextPage && <CardPage.Next onClick={handleClickNext} />}
+      {hasPrevPage && <CardPage.Prev onClick={handleClickPrev} />}
 
-        {CARD_MOCK.filter((c) => c.category === category)
-          .slice(startIndex, endIndex)
-          .map((card) => (
-            <CardItem
-              data={card}
-              key={card.name}
-              setShowModal={setShowModal}
-              setSelectData={setSelectData}
-            />
-          ))}
-      </StyledCategoryWrapper>
-      {showModal && <CategoryDetailModal setShowModal={setShowModal} data={selectData} />}
-    </>
+      {CARD_MOCK.filter((c) => c.category === category)
+        .slice(startIndex, endIndex)
+        .map((card) => (
+          <CardItem data={card} key={card.name} />
+        ))}
+    </StyledCategoryWrapper>
   );
 };

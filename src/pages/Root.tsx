@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { createContext, useContext, useEffect, useState } from 'react';
 import { Outlet, useNavigate } from 'react-router-dom';
 import styled from '@emotion/styled';
 
@@ -19,8 +19,12 @@ const Wrapper = styled.div`
   align-items: center;
 `;
 
+const RootContext = createContext<HTMLDivElement | null>(null);
+export const useRootRef = () => useContext(RootContext);
+
 export const Root = () => {
   const navigate = useNavigate();
+  const [rootRef, setRootRef] = useState<HTMLDivElement | null>(null);
 
   useEffect(() => {
     const storedName = localStorage.getItem('name');
@@ -30,11 +34,14 @@ export const Root = () => {
       navigate(`/${PATH.PROFILE}`);
     }
   }, [navigate]);
+
   return (
-    <Container>
-      <Wrapper>
-        <Outlet />
-      </Wrapper>
-    </Container>
+    <RootContext.Provider value={rootRef}>
+      <Container ref={setRootRef}>
+        <Wrapper>
+          <Outlet />
+        </Wrapper>
+      </Container>
+    </RootContext.Provider>
   );
 };
