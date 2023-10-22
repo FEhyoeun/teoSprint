@@ -331,169 +331,163 @@
   },
   {
     "category": "날씨",
-    "name": "Sunny",
+    "name": "해",
     "img": "src/assets/card/sunny.svg",
     "audio": ""
   },
   {
     "category": "날씨",
-    "name": "Cloudy",
+    "name": "구름",
     "img": "src/assets/card/cloudy.svg",
     "audio": ""
   },
   {
     "category": "날씨",
-    "name": "Rainy",
+    "name": "비",
     "img": "src/assets/card/rainy.svg",
     "audio": ""
   },
   {
     "category": "날씨",
-    "name": "snowy",
+    "name": "눈",
     "img": "src/assets/card/snowy.svg",
     "audio": ""
   },
   {
     "category": "날씨",
-    "name": "Windy",
+    "name": "바람",
     "img": "src/assets/card/windy.svg",
     "audio": ""
   },
   {
     "category": "날씨",
-    "name": "Thunderstorm",
+    "name": "태풍",
     "img": "src/assets/card/thunderstorm.svg",
     "audio": ""
   },
   {
     "category": "숫자",
-    "name": "One",
+    "name": "하나",
     "img": "src/assets/card/one.svg",
     "audio": ""
   },
   {
     "category": "숫자",
-    "name": "Two",
+    "name": "둘",
     "img": "src/assets/card/two.svg",
     "audio": ""
   },
   {
     "category": "숫자",
-    "name": "Three",
+    "name": "셋",
     "img": "src/assets/card/three.svg",
     "audio": ""
   },
   {
     "category": "숫자",
-    "name": "Four",
+    "name": "넷",
     "img": "src/assets/card/four.svg",
     "audio": ""
   },
   {
     "category": "숫자",
-    "name": "Five",
+    "name": "다섯",
     "img": "src/assets/card/five.svg",
     "audio": ""
   },
   {
     "category": "숫자",
-    "name": "Six",
+    "name": "여섯",
     "img": "src/assets/card/six.svg",
     "audio": ""
   },
   {
     "category": "숫자",
-    "name": "Seven",
+    "name": "일곱",
     "img": "src/assets/card/seven.svg",
     "audio": ""
   },
   {
     "category": "숫자",
-    "name": "Eight",
+    "name": "여덟",
     "img": "src/assets/card/eight.svg",
     "audio": ""
   },
   {
     "category": "숫자",
-    "name": "Nine",
+    "name": "아홉",
     "img": "src/assets/card/nine.svg",
     "audio": ""
   },
   {
     "category": "숫자",
-    "name": "Ten",
+    "name": "열",
     "img": "src/assets/card/ten.svg",
     "audio": ""
   },
   {
     "category": "음식",
-    "name": "bibimbap",
-    "img": "src/assets/card/bibimbap.svg",
-    "audio": ""
-  },
-  {
-    "category": "음식",
-    "name": "pizza",
+    "name": "피자",
     "img": "src/assets/card/pizza.svg",
     "audio": ""
   },
   {
     "category": "음식",
-    "name": "Tteokbokki",
+    "name": "떡볶이",
     "img": "src/assets/card/tteokbokki.svg",
     "audio": ""
   },
   {
     "category": "음식",
-    "name": "Kimchi",
+    "name": "김치",
     "img": "src/assets/card/kimchi.svg",
     "audio": ""
   },
   {
     "category": "음식",
-    "name": "Bibimbap",
+    "name": "비빔밥",
     "img": "src/assets/card/bibimbap.svg",
     "audio": ""
   },
   {
     "category": "음식",
-    "name": "Hotdog",
+    "name": "핫도그",
     "img": "src/assets/card/hotdog.svg",
     "audio": ""
   },
   {
     "category": "음식",
-    "name": "Gimbap",
+    "name": "김밥",
     "img": "src/assets/card/gimbap.svg",
     "audio": ""
   },
   {
     "category": "음식",
-    "name": "Sandwich",
+    "name": "샌드위치",
     "img": "src/assets/card/sandwich.svg",
     "audio": ""
   },
   {
     "category": "음식",
-    "name": "Cake",
+    "name": "케이크",
     "img": "src/assets/card/cake.svg",
     "audio": ""
   },
   {
     "category": "음식",
-    "name": "Yakgwa",
+    "name": "약과",
     "img": "src/assets/card/yakgwa.svg",
     "audio": ""
   },
   {
     "category": "음식",
-    "name": "Water",
+    "name": "물",
     "img": "src/assets/card/water.svg",
     "audio": ""
   },
   {
     "category": "음식",
-    "name": "Milk",
+    "name": "우유",
     "img": "src/assets/card/milk.svg",
     "audio": ""
   }

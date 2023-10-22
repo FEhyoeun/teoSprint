@@ -11,7 +11,6 @@ import { PATH } from '../constants/path';
 export const Layout = () => {
   const { pathname } = useLocation();
   const param = pathname.includes(PATH.CATEGORIES) ? PATH.CATEGORIES : PATH.ALBUM;
-  const onLogoClick = () => {
 
   }
   return (

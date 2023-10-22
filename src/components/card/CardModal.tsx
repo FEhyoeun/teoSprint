@@ -42,7 +42,7 @@ const overlayShow = keyframes`
   to { opacity: 1 }
 `;
 
-const StyledDialogOverlay = styled(DialogOverlay)`
+export const StyledDialogOverlay = styled(DialogOverlay)`
   background-color: rgba(0, 0, 0, 0.2);
   position: fixed;
   inset: 0;
@@ -57,7 +57,7 @@ const contentShow = keyframes`
   to { opacity: 1; transform: translate(-50%, -50%) scale(1) }
 `;
 
-const StyledDialogContent = styled(DialogContent)`
+export const StyledDialogContent = styled(DialogContent)`
   position: fixed;
   top: 50%; // TODO: top, left 조정 필요
   left: 50%;

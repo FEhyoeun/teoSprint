@@ -2,6 +2,18 @@ import { data } from '../components/category/mock.json';
 import { Outlet, useNavigate, useParams } from 'react-router-dom';
 import styled from '@emotion/styled';
 import { PATH } from '../constants/path';
+import { keyframes } from '@emotion/react';
+
+const translateAnimation = keyframes`
+  from {
+    transform: translateX(500%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+`;
 
 const StyledCategories = styled.div`
   position: relative;
@@ -28,6 +40,7 @@ const StyledCategories = styled.div`
 
 const StyledCategoryItem = styled.input`
   border-radius: 5px;
+  animation: ${translateAnimation} 1s ease;
   cursor: pointer;
   box-shadow: 5px 0px 10px -2px rgba(0,0,0,0.4);
 `;
