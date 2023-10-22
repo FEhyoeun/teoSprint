@@ -4,49 +4,49 @@
       "index": 0,
       "categoryName": "animal",
       "icon": "🐕",
-      "imgUrl": "https://images.pexels.com/photos/2558605/pexels-photo-2558605.jpeg?cs=srgb&dl=pexels-chevon-rossouw-2558605.jpg&fm=jpg"
+      "imgUrl": "src/assets/category/animal.svg"
     },
     {
       "index": 1,
       "categoryName": "object",
       "icon": "🪑",
-      "imgUrl": "https://images.pexels.com/photos/2558605/pexels-photo-2558605.jpeg?cs=srgb&dl=pexels-chevon-rossouw-2558605.jpg&fm=jpg"
+      "imgUrl": "src/assets/category/object.svg"
     },
     {
       "index": 2,
       "categoryName": "family",
       "icon": "👪",
-      "imgUrl": "https://images.pexels.com/photos/2558605/pexels-photo-2558605.jpeg?cs=srgb&dl=pexels-chevon-rossouw-2558605.jpg&fm=jpg"
+      "imgUrl": "src/assets/category/family.svg"
     },
     {
       "index": 3,
       "categoryName": "color",
       "icon": "🎨",
-      "imgUrl": "https://images.pexels.com/photos/2558605/pexels-photo-2558605.jpeg?cs=srgb&dl=pexels-chevon-rossouw-2558605.jpg&fm=jpg"
+      "imgUrl": "src/assets/category/colors.svg"
     },
     {
       "index": 4,
       "categoryName": "emotion",
       "icon": "😄",
-      "imgUrl": "https://images.pexels.com/photos/2558605/pexels-photo-2558605.jpeg?cs=srgb&dl=pexels-chevon-rossouw-2558605.jpg&fm=jpg"
+      "imgUrl": "src/assets/category/emotion.svg"
     },
     {
       "index": 5,
       "categoryName": "weather",
       "icon": "☀️",
-      "imgUrl": "https://images.pexels.com/photos/2558605/pexels-photo-2558605.jpeg?cs=srgb&dl=pexels-chevon-rossouw-2558605.jpg&fm=jpg"
+      "imgUrl": "src/assets/category/weather.svg"
     },
     {
       "index": 6,
       "categoryName": "number",
       "icon": "🔢",
-      "imgUrl": "https://images.pexels.com/photos/2558605/pexels-photo-2558605.jpeg?cs=srgb&dl=pexels-chevon-rossouw-2558605.jpg&fm=jpg"
+      "imgUrl": "src/assets/category/number.svg"
     },
     {
       "index": 7,
       "categoryName": "food",
       "icon": "🍽️",
-      "imgUrl": "https://images.pexels.com/photos/2558605/pexels-photo-2558605.jpeg?cs=srgb&dl=pexels-chevon-rossouw-2558605.jpg&fm=jpg"
+      "imgUrl": "src/assets/category/food.svg"
     }
   ]
 }
