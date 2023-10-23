@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { Card as CardType } from '../../types/card';
 import { CardModal } from './CardModal';
 

@@ -1,12 +1,18 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import styled from '@emotion/styled';
 import CARD_MOCK from '../assets/card/card_mock.json';
-import { useParams } from 'react-router';
+import { useLocation, useParams } from 'react-router';
 import { CardItem } from '../components/card/CardItem';
 import { CardPage } from '../components/card/CardPage';
 export default function AlbumCards() {
   const { category } = useParams() as { category: string };
   const [currentPage, setCurrentPage] = useState(0); // 계산 편의성을 위해 첫 페이지를 0으로 설정
+
+  const { pathname } = useLocation();
+  const [currentUrl, setCurrentUrl] = useState("");
+  useEffect(() => {
+    setCurrentUrl(pathname)
+  }, [pathname])
 
   const nextPage = currentPage + 1;
   const prevPage = currentPage - 1;
@@ -30,7 +36,7 @@ export default function AlbumCards() {
       {CARD_MOCK.filter((c) => c.category === category)
         .slice(startIndex, endIndex)
         .map((card) => (
-          <CardBag key={card.name}>
+          <CardBag key={card.name} url={currentUrl}>
             <CardItem data={card} key={card.name} />
           </CardBag>
         ))}
@@ -50,9 +56,9 @@ const CardsWrapper = styled.div`
   overflow: hidden;
 `;
 
-const CardBag = styled.div`
-  border: none;
-  border: 2px solid gray;
-  padding: 0.5rem;
+const CardBag = styled.div<{ url: string }>`
+border: none;
+  border: ${props => props.url.includes('album') ? "4px dashed gray" : "none"}  ;
   border-top: none;
+  padding: 0.5rem;
 `;
