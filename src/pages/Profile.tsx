@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import MavoFace from '../assets/charecter/MaVo_Face.svg';
 import MavoLogo from '../assets/charecter/MaVo_Logo.svg';
 import Face from '../assets/face.svg';
+import { _mainColBlue } from '../constants/colors';
 
 import { PATH } from '../constants/path';
 import { ProfileModal } from '../components/profileModal/ProfileModal';
@@ -53,6 +54,7 @@ const ProfileImage = styled.img`
   background-size: 80% 80%;
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  background-color: ${_mainColBlue};
 `;
 const ProfileName = styled.div`
   font-size: 40px;
@@ -76,17 +78,17 @@ const SubmitBtn = styled.button`
 `;
 
 const Profile = () => {
-  const [name, setName] = useState<string>('');
+  // const [name, setName] = useState<string>('');
   const [profileImg, setProfileImg] = useState(Face);
   const navigate = useNavigate();
 
   const handleSubmit = (e: React.MouseEvent) => {
     e.preventDefault();
-    if (name === '') {
-      localStorage.setItem('name', '무명');
-    } else {
-      localStorage.setItem('name', name);
-    }
+    // if (name === '') {
+    //   localStorage.setItem('name', '무명');
+    // } else {
+    //   localStorage.setItem('name', name);
+    // }
     localStorage.setItem('image', profileImg);
     navigate(`/${PATH.CATEGORIES}`);
   };
@@ -104,12 +106,12 @@ const Profile = () => {
         <ProfileModal onImgSelect={handleSelect}>
           <ProfileImage src={profileImg} />
         </ProfileModal>
-        <ProfileName>이름</ProfileName>
-        <InputName
+        {/* <ProfileName>이름</ProfileName> */}
+        {/* <InputName
           placeholder="이름을 입력해주세요"
           value={name}
           onChange={(e) => setName(e.target.value)}
-        />
+        /> */}
         <SubmitBtn onClick={handleSubmit}>시작하기</SubmitBtn>
       </Wrapper>
     </Container>
