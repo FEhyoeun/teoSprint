@@ -14,7 +14,7 @@ import MavoLogo from '../assets/charecter/MaVo_Logo.svg';
 export const Layout = () => {
   const { pathname } = useLocation();
   const param = pathname.includes(PATH.CATEGORIES) ? PATH.CATEGORIES : PATH.ALBUM;
-
+  console.log(pathname)
   return (
     <MainWrapper>
       <Header>
@@ -29,7 +29,7 @@ export const Layout = () => {
       </SideSection>
       <OutletWrapper param={param}>
         <AlbumSpringWrapper param={param} />
-        <AlbumPaper>
+        <AlbumPaper pathname={pathname}>
           <Outlet />
         </AlbumPaper>
       </OutletWrapper>
@@ -76,17 +76,18 @@ const OutletWrapper = styled.section<{ param: string }>`
 display: flex;
 align-items: center;
 background-color: ${(props) => (props.param === PATH.CATEGORIES ? _mainColOrange : _mainColGreen)};
+box-shadow: 3px 0px 10px 3px rgba(0,0,0,0.45);
 `;
 
-const AlbumPaper = styled.div`
+const AlbumPaper = styled.div<{ pathname: string }>`
   width: 93%;
   height: 95%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
+  background-color: ${props => props.pathname === '/categories' ? 'transparent' : 'white'};
   border-radius: 0px 5px 5px 0px;
-  box-shadow: 13px 0px 10px -2px rgba(0, 0, 0, 0.4);
+  box-shadow: ${props => props.pathname === '/categories' ? "none" : '13px 0px 10px -2px rgba(0, 0, 0, 0.4)'};
 `;
 
 const AlbumSpringWrapper = styled.div<{ param: string }>`
