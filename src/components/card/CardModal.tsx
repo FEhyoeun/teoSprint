@@ -10,6 +10,23 @@ import {
   DialogTrigger,
 } from '@radix-ui/react-dialog';
 import { useSpeechRecognition, useSpeechSynthesis } from 'react-speech-kit';
+import Icon from '../common/Icon';
+
+const IconStyledPrev = styled(Icon)<{ isNext: boolean }>`
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  left: -70px;
+  border: none;
+`;
+
+const IconStyledNext = styled(Icon)<{ isNext: boolean }>`
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  right: -70px;
+  border: none;
+`;
 
 import { useRootRef } from '../../pages/Root';
 import CARDS_MOCK from '../../assets/card/card_mock.json';
@@ -112,16 +129,6 @@ const StyledCardImg = styled.img`
   left: 0;
   width: 100%;
 `;
-const StyledPrevButton = styled.button`
-  position: absolute;
-  top: 50%;
-  left: -30px;
-`;
-const StyledNextButton = styled.button`
-  position: absolute;
-  top: 50%;
-  right: -30px;
-`;
 
 export const CardModal = ({ children, name }: { children: React.ReactNode; name: string }) => {
   const rootRef = useRootRef();
@@ -189,8 +196,20 @@ export const CardModal = ({ children, name }: { children: React.ReactNode; name:
 
           <StyledCardImg alt={card?.name} src={`${card?.img}`} />
 
-          <StyledPrevButton onClick={handlePrevClick}>이전 버튼</StyledPrevButton>
-          <StyledNextButton onClick={handleNextClick}>다음 버튼</StyledNextButton>
+          <IconStyledPrev
+            name="chevron-left"
+            isNext
+            size={96}
+            color="white"
+            onClick={handlePrevClick}
+          />
+          <IconStyledNext
+            name="chevron-right"
+            isNext
+            size={96}
+            color="white"
+            onClick={handleNextClick}
+          />
         </StyledDialogContent>
       </DialogPortal>
     </Dialog>
