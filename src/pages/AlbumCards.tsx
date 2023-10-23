@@ -9,10 +9,10 @@ export default function AlbumCards() {
   const [currentPage, setCurrentPage] = useState(0); // 계산 편의성을 위해 첫 페이지를 0으로 설정
 
   const { pathname } = useLocation();
-  const [currentUrl, setCurrentUrl] = useState("");
+  const [currentUrl, setCurrentUrl] = useState('');
   useEffect(() => {
-    setCurrentUrl(pathname)
-  }, [pathname])
+    setCurrentUrl(pathname);
+  }, [pathname]);
 
   const nextPage = currentPage + 1;
   const prevPage = currentPage - 1;
@@ -66,10 +66,10 @@ const CardsWrapper = styled.div`
 `;
 
 const CardBag = styled.div<{ url: string }>`
-width: 225px;
-height: 295px;
-border: none;
-  border: ${props => props.url.includes('album') ? "3px dashed gray" : "none"}  ;
+  width: 225px;
+  height: 295px;
+  border: none;
+  border: ${(props) => (props.url.includes('album') ? '3px dashed gray' : 'none')};
   border-top: none;
   border-bottom-left-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;

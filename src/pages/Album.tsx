@@ -28,18 +28,18 @@ const AlbumSpringWrapper = styled.div`
   width: 2rem;
   height: 100%;
   background-color: ${_mainColBg_Dark};
-margin-right: 0.5rem;
-left: -2rem;
-display: flex;
-align-items: center;
-position: absolute;
-padding: 1rem;
-`
+  margin-right: 0.5rem;
+  left: -2rem;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  padding: 1rem;
+`;
 const AlbumStringImg = styled.img`
   height: 95%;
-`
+`;
 const Cards = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-`
+`;

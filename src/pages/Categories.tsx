@@ -24,25 +24,13 @@ const StyledCategories = styled.div`
   justify-content: center;
   align-items: center;
   gap: 20px;
-  overflow: hidden;
-
-  /* width */
-  ::-webkit-scrollbar {
-    width: 15px;
-  }
-
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: yellow;
-    border-radius: 5px;
-  }
 `;
 
 const StyledCategoryItem = styled.input`
   border-radius: 5px;
   animation: ${translateAnimation} 1s ease;
   cursor: pointer;
-  box-shadow: 5px 0px 10px -2px rgba(0,0,0,0.4);
+  box-shadow: 5px 0px 10px -2px rgba(0, 0, 0, 0.4);
 `;
 
 export const Categories = () => {
