@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import MavoFace from '../assets/charecter/MaVo_Face.svg';
 import MavoLogo from '../assets/charecter/MaVo_Logo.svg';
 import Face from '../assets/face.svg';
-import { _mainColBlue } from '../constants/colors';
+import { _mainColBlue, _mainStartBtn, _mainTextWhite } from '../constants/colors';
 
 import { PATH } from '../constants/path';
 import { ProfileModal } from '../components/profileModal/ProfileModal';
@@ -43,6 +43,8 @@ const ProjectName = styled.div`
   width: 100%;
   text-align: center;
   font-size: 48px;
+  font-family: 'Katuri';
+  margin-bottom: 42px;
 `;
 const ProfileImage = styled.img`
   display: flex;
@@ -70,11 +72,13 @@ const SubmitBtn = styled.button`
   width: 50%;
   height: 10%;
   padding: 13px;
-  margin-top: 10px;
+  margin-top: 94px;
   border-radius: 60px;
   font-size: 36px;
   border: none;
   cursor: pointer;
+  color: ${_mainTextWhite};
+  background-color: ${_mainStartBtn};
 `;
 
 const Profile = () => {
