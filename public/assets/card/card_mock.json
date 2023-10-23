@@ -211,61 +211,61 @@
   },
   {
     "category": "색깔",
-    "name": "검정",
+    "name": "검은색",
     "img": "/assets/card/black.svg",
     "audio": ""
   },
   {
     "category": "색깔",
-    "name": "노랑",
+    "name": "노랑색",
     "img": "/assets/card/yellow.svg",
     "audio": ""
   },
   {
     "category": "색깔",
-    "name": "보라",
+    "name": "보라색",
     "img": "/assets/card/purple.svg",
     "audio": ""
   },
   {
     "category": "색깔",
-    "name": "분홍",
+    "name": "분홍색",
     "img": "/assets/card/pink.svg",
     "audio": ""
   },
   {
     "category": "색깔",
-    "name": "빨강",
+    "name": "빨간색",
     "img": "/assets/card/red.svg",
     "audio": ""
   },
   {
     "category": "색깔",
-    "name": "주황",
+    "name": "주황색",
     "img": "/assets/card/orange.svg",
     "audio": ""
   },
   {
     "category": "색깔",
-    "name": "초록",
+    "name": "초록색",
     "img": "/assets/card/green.svg",
     "audio": ""
   },
   {
     "category": "색깔",
-    "name": "파랑",
+    "name": "파랑색",
     "img": "/assets/card/blue.svg",
     "audio": ""
   },
   {
     "category": "색깔",
-    "name": "하늘",
+    "name": "하늘색",
     "img": "/assets/card/sky.svg",
     "audio": ""
   },
   {
     "category": "색깔",
-    "name": "하양",
+    "name": "흰색",
     "img": "/assets/card/white.svg",
     "audio": ""
   },
