@@ -5,7 +5,7 @@ import SideNavBar from './navBars/SideNavBar';
 import TopNavBar from './navBars/TopNavBar';
 
 import { _mainHeight, _mainWidth } from '../constants/sizes';
-import { _mainCol300, _mainCol400, _mainColBg } from '../constants/colors';
+import { _mainColGreen, _mainColBlue, _mainColOrange } from '../constants/colors';
 import { PATH } from '../constants/path';
 
 import MavoFace from '../assets/charecter/MaVo_Face.svg';
@@ -51,7 +51,7 @@ const Header = styled.header`
 const SideSection = styled.section`
   grid-column: 2/3;
   grid-row: 2/3;
-  background-color: ${_mainColBg};
+  background-color: ${_mainColBlue};
   display: flex;
   padding: 5px;
   flex-direction: column;
@@ -70,7 +70,7 @@ const Logo = styled.div`
 const OutletWrapper = styled.section<{ param: string }>`
   grid-column: 1/2;
   grid-row: 2/3;
-  background-color: ${(props) => (props.param === PATH.CATEGORIES ? _mainCol300 : _mainCol400)};
+  background-color: ${(props) => (props.param === PATH.CATEGORIES ? _mainColOrange : _mainColGreen)};
 `;
 
 const LogoFace = styled.img`
