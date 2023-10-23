@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from '@emotion/styled';
-import { _mainCol300, _mainCol400, _mainTextDark } from '../../constants/colors';
+import { _mainCol300, _mainColGreen, _mainTextDark } from '../../constants/colors';
 import { PATH } from '../../constants/path';
 import Album from '../../assets/album.svg';
 import Library from '../../assets/album.svg';
@@ -64,7 +64,7 @@ const ListWrapper_Category = styled.div`
 `;
 
 const ListWrapper_Album = styled(ListWrapper_Category)`
-  background-color: ${_mainCol400};
+  background-color: ${_mainColGreen};
 `;
 
 const TextBox = styled.div`

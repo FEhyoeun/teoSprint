@@ -1,6 +1,7 @@
-export const _mainColBg = '#596275';
-export const _mainCol200 = '#e77f67';
-export const _mainCol300 = '#778beb';
-export const _mainCol400 = '#f7d794';
+export const _mainColOrange = '#e77f67';
+export const _mainColGreen = '#A0D36D';
+export const _mainColBlue = '#49D1CC';
+export const _mainColDarkGreen = '#69B95C';
+
+export const _mainColBg_Dark = '#EDEAE3'
 export const _mainTextDark = 'black';
-export const _mainColBlue = '#A0E1F5';
