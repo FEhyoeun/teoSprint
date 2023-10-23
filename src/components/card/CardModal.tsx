@@ -63,11 +63,11 @@ const StyledDialogTrigger = styled(DialogTrigger)`
   padding: 0;
   border: 0;
   cursor: pointer;
-  animation: ${translateAnimation}  1s ease;
+  animation: ${translateAnimation} 1s ease;
 `;
 
 const StyledDialogTrigger_Album = styled(StyledDialogTrigger)`
-  animation: ${translateAlbumAnimation}  1.5s ease;
+  animation: ${translateAlbumAnimation} 1.5s ease;
 `;
 
 const overlayShow = keyframes`
@@ -164,17 +164,18 @@ export const CardModal = ({ children, name }: { children: React.ReactNode; name:
     if (currentIndex === 0) return setCard(currentCategoryCards[currentCategoryCards.length - 1]);
     return setCard(currentCategoryCards[currentIndex - 1]);
   };
-  const handleTTSClick = () => speak({ text: name });
+  const handleTTSClick = () => speak({ text: card?.name });
   const handlePrevClick = () => getCard('prev');
   const handleNextClick = () => getCard('next');
   const handleOpenChange = (close: boolean) => close && setCard(initialState as CardType);
 
   return (
     <Dialog onOpenChange={handleOpenChange}>
-      {pathname.includes('album') ?
+      {pathname.includes('album') ? (
         <StyledDialogTrigger_Album>{children}</StyledDialogTrigger_Album>
-        : <StyledDialogTrigger>{children}</StyledDialogTrigger>
-      }
+      ) : (
+        <StyledDialogTrigger>{children}</StyledDialogTrigger>
+      )}
 
       <DialogPortal container={rootRef}>
         <StyledDialogOverlay />
