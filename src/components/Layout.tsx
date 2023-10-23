@@ -4,8 +4,8 @@ import { Outlet, useLocation } from 'react-router-dom';
 import SideNavBar from './navBars/SideNavBar';
 import TopNavBar from './navBars/TopNavBar';
 
-import { _mainHeight, _mainWidth } from '../constants/sizes';
-import { _mainColGreen, _mainColBlue, _mainColOrange } from '../constants/colors';
+import { _mainHeight, _mainSpringGapWidth, _mainWidth } from '../constants/sizes';
+import { _mainColGreen, _mainColBlue, _mainColOrange, _mainColBg_Dark, _mainColGreen_Dark, _mainColOrange_Dark } from '../constants/colors';
 import { PATH } from '../constants/path';
 
 import MavoFace from '../assets/charecter/MaVo_Face.svg';
@@ -28,7 +28,10 @@ export const Layout = () => {
         <SideNavBar />
       </SideSection>
       <OutletWrapper param={param}>
-        <Outlet />
+        <AlbumSpringWrapper param={param} />
+        <AlbumPaper>
+          <Outlet />
+        </AlbumPaper>
       </OutletWrapper>
     </MainWrapper>
   );
@@ -70,17 +73,37 @@ const Logo = styled.div`
 const OutletWrapper = styled.section<{ param: string }>`
   grid-column: 1/2;
   grid-row: 2/3;
-  background-color: ${(props) => (props.param === PATH.CATEGORIES ? _mainColOrange : _mainColGreen)};
+display: flex;
+align-items: center;
+background-color: ${(props) => (props.param === PATH.CATEGORIES ? _mainColOrange : _mainColGreen)};
 `;
 
+const AlbumPaper = styled.div`
+  width: 93%;
+  height: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 0px 5px 5px 0px;
+  box-shadow: 13px 0px 10px -2px rgba(0, 0, 0, 0.4);
+`;
+
+const AlbumSpringWrapper = styled.div<{ param: string }>`
+  width: ${_mainSpringGapWidth};
+  height: 100%;
+  background-color: ${props => props.param === 'album' ? _mainColGreen_Dark : _mainColOrange_Dark};
+/* margin-right: 0.5rem; */
+`
+
 const LogoFace = styled.img`
-  width: 5rem;
-  position: absolute;
-  top: -0.5rem;
+width: 5rem;
+position: absolute;
+top: -0.5rem;
+left: 0.5rem;
 `;
 const LogoText = styled.img`
-  width: 10rem;
-  position: absolute;
-  top: -2.5rem;
-  left: 4rem;
+width: 9rem;
+position: absolute;
+left: 6rem;
 `;

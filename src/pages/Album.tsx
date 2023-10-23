@@ -1,11 +1,17 @@
 import styled from '@emotion/styled';
 import { Outlet } from 'react-router';
+import { _mainColBg_Dark, _mainColGreen_Dark } from '../constants/colors';
+import springLogo from '../assets/design/spring.svg';
+
 export default function Album() {
   return (
     <AlbumPage>
-      <AlbumPaper>
+      <AlbumSpringWrapper>
+        <AlbumStringImg src={springLogo} />
+      </AlbumSpringWrapper>
+      <Cards>
         <Outlet />
-      </AlbumPaper>
+      </Cards>
     </AlbumPage>
   );
 }
@@ -13,14 +19,27 @@ const AlbumPage = styled.section`
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   padding-left: 2px;
+  position: relative;
 `;
-const AlbumPaper = styled.div`
-  width: 98%;
+const AlbumSpringWrapper = styled.div`
+  width: 2rem;
+  height: 100%;
+  background-color: ${_mainColBg_Dark};
+margin-right: 0.5rem;
+left: -2rem;
+display: flex;
+align-items: center;
+position: absolute;
+padding: 1rem;
+`
+const AlbumStringImg = styled.img`
   height: 95%;
-  background-color: white;
-  border-radius: 0px 5px 5px 0px;
-  box-shadow: 13px 0px 10px -2px rgba(0, 0, 0, 0.4);
-`;
+`
+const Cards = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`

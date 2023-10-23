@@ -34,6 +34,7 @@ import CLOSE_IMG from '../../assets/close.svg';
 import VOLUME_IMG from '../../assets/volume.svg';
 
 import { Card as CardType } from '../../types/card';
+import { useLocation } from 'react-router';
 
 const translateAnimation = keyframes`
   from {
@@ -46,12 +47,27 @@ const translateAnimation = keyframes`
   }
 `;
 
+const translateAlbumAnimation = keyframes`
+  from {
+    transform: translateY(-500%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+`;
+
 const StyledDialogTrigger = styled(DialogTrigger)`
   background-color: transparent;
   padding: 0;
   border: 0;
   cursor: pointer;
-  animation: ${translateAnimation} 1s ease;
+  animation: ${translateAnimation}  1s ease;
+`;
+
+const StyledDialogTrigger_Album = styled(StyledDialogTrigger)`
+  animation: ${translateAlbumAnimation}  1.5s ease;
 `;
 
 const overlayShow = keyframes`
@@ -116,7 +132,7 @@ const StyledCardImg = styled.img`
 
 export const CardModal = ({ children, name }: { children: React.ReactNode; name: string }) => {
   const rootRef = useRootRef();
-
+  const { pathname } = useLocation();
   const initialState = CARDS_MOCK.find((c) => c.name === name);
   const [card, setCard] = useState(initialState as CardType);
 
@@ -148,7 +164,6 @@ export const CardModal = ({ children, name }: { children: React.ReactNode; name:
     if (currentIndex === 0) return setCard(currentCategoryCards[currentCategoryCards.length - 1]);
     return setCard(currentCategoryCards[currentIndex - 1]);
   };
-
   const handleTTSClick = () => speak({ text: name });
   const handlePrevClick = () => getCard('prev');
   const handleNextClick = () => getCard('next');
@@ -156,7 +171,10 @@ export const CardModal = ({ children, name }: { children: React.ReactNode; name:
 
   return (
     <Dialog onOpenChange={handleOpenChange}>
-      <StyledDialogTrigger>{children}</StyledDialogTrigger>
+      {pathname.includes('album') ?
+        <StyledDialogTrigger_Album>{children}</StyledDialogTrigger_Album>
+        : <StyledDialogTrigger>{children}</StyledDialogTrigger>
+      }
 
       <DialogPortal container={rootRef}>
         <StyledDialogOverlay />
