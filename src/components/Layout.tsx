@@ -8,6 +8,9 @@ import { _mainHeight, _mainWidth } from '../constants/sizes';
 import { _mainCol300, _mainCol400, _mainColBg } from '../constants/colors';
 import { PATH } from '../constants/path';
 
+import MavoFace from '../assets/charecter/MaVo_Face.svg';
+import MavoLogo from '../assets/charecter/MaVo_Logo.svg';
+
 export const Layout = () => {
   const { pathname } = useLocation();
   const param = pathname.includes(PATH.CATEGORIES) ? PATH.CATEGORIES : PATH.ALBUM;
@@ -16,8 +19,8 @@ export const Layout = () => {
     <MainWrapper>
       <Header>
         <Logo>
-          <LogoFace src="src\assets\charecter\MaVo_Face.svg" />
-          <LogoText src="src\assets\charecter\MaVo_Logo.svg" />
+          <LogoFace src={MavoFace} />
+          <LogoText src={MavoLogo} />
         </Logo>
         <TopNavBar />
       </Header>

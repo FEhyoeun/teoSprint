@@ -6,7 +6,7 @@ export const CardItem = ({ data }: { data: CardType }) => {
 
   return (
     <CardModal name={name}>
-      <img src={`/${img}`} alt={name} draggable="false" />
+      <img src={`${img}`} alt={name} draggable="false" />
     </CardModal>
   );
 };
