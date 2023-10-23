@@ -44,17 +44,6 @@ export default function AlbumCards() {
   );
 }
 
-// const CardsWrapper = styled.div`
-//   position: relative;
-//   width: 100%;
-//   height: 100%;
-//   display: flex;
-//   flex-wrap: wrap;
-//   justify-content: center;
-//   align-items: center;
-//   gap: 20px;
-//   overflow: hidden;
-// `;
 
 const CardsWrapper = styled.div`
   width: 100%;
@@ -62,17 +51,14 @@ const CardsWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   flex-wrap: wrap;
-  gap: 0.5rem;
 `;
 
 const CardBag = styled.div<{ url: string }>`
-  width: 225px;
-  height: 295px;
-  border: none;
-  border: ${(props) => (props.url.includes('album') ? '3px dashed gray' : 'none')};
+width: 250px;
+height: 355px;
+border: none;
+  border: ${props => props.url.includes('album') ? "2px dashed gray" : "none"}  ;
   border-top: none;
-  border-bottom-left-radius: 0.5rem;
-  border-bottom-right-radius: 0.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
