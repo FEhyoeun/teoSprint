@@ -1,7 +1,6 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from '@emotion/styled';
-import { _mainCol300, _mainColGreen, _mainTextDark } from '../../constants/colors';
+import { _mainColGreen, _mainColOrange, _mainTextDark } from '../../constants/colors';
 import { PATH } from '../../constants/path';
 import Album from '../../assets/album.svg';
 import Library from '../../assets/album.svg';
@@ -40,7 +39,7 @@ const UlWrapper = styled.nav`
 
 const ListWrapper_Category = styled.div`
   width: 14rem;
-  background-color: ${_mainCol300};
+  background-color: ${_mainColOrange};
   display: flex;
   justify-content: center;
   align-items: center;

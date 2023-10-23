@@ -2,7 +2,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { PATH } from '../../constants/path';
 import categoryData from '../category/mock.json';
 import styled from '@emotion/styled';
-import { _mainColOrange } from '../../constants/colors';
+import { _mainColBg_Light, _mainColOrange } from '../../constants/colors';
 import { useEffect, useState } from 'react';
 
 export default function SideNavBar() {
@@ -64,7 +64,7 @@ const NavLi = styled.li`
   height: 4rem;
   padding: 0.5rem;
   margin: 3px 0;
-  background-color: ${_mainColOrange};
+  background-color: ${_mainColBg_Light};
   border-radius: 50%;
   display: flex;
   justify-content: center;

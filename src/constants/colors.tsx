@@ -1,5 +1,5 @@
-export const _mainColOrange = '#e77f67';
-export const _mainColOrange_Dark = '#E38846';
+export const _mainColOrange = '#FFB45B';
+export const _mainColOrange_Dark = '#e77f67';
 export const _mainColGreen = '#A0D36D';
 export const _mainColBlue = '#49D1CC';
 export const _mainColGreen_Dark = '#69B95C';
