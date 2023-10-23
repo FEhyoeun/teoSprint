@@ -145,11 +145,20 @@ export default function GlobalCSS() {
         }
         * {
           box-sizing: border-box;
+          font-family: 'Katuri';
         }
         body {
           display: flex;
           justify-content: center;
           align-items: center;
+        }
+
+        @font-face {
+          font-family: 'Katuri';
+          src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_13@1.0/Katuri.woff')
+            format('woff');
+          font-weight: normal;
+          font-style: normal;
         }
       `}
     />
