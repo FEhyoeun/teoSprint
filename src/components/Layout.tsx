@@ -100,10 +100,10 @@ const LogoFace = styled.img`
 width: 5rem;
 position: absolute;
 top: -0.5rem;
+left: 0.5rem;
 `;
 const LogoText = styled.img`
-width: 10rem;
+width: 9rem;
 position: absolute;
-top: -2.5rem;
-left: 4rem;
+left: 6rem;
 `;

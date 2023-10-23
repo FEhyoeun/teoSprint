@@ -62,14 +62,17 @@ const CardsWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   flex-wrap: wrap;
+  gap: 0.5rem;
 `;
 
 const CardBag = styled.div<{ url: string }>`
 width: 225px;
 height: 295px;
 border: none;
-  border: ${props => props.url.includes('album') ? "4px dashed gray" : "none"}  ;
+  border: ${props => props.url.includes('album') ? "3px dashed gray" : "none"}  ;
   border-top: none;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
   display: flex;
   justify-content: center;
   align-items: center;

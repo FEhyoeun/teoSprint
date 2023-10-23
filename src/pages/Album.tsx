@@ -1,10 +1,14 @@
 import styled from '@emotion/styled';
 import { Outlet } from 'react-router';
 import { _mainColBg_Dark, _mainColGreen_Dark } from '../constants/colors';
+import springLogo from '../assets/design/spring.svg';
+
 export default function Album() {
   return (
     <AlbumPage>
-      <AlbumSpringWrapper />
+      <AlbumSpringWrapper>
+        <AlbumStringImg src={springLogo} />
+      </AlbumSpringWrapper>
       <Cards>
         <Outlet />
       </Cards>
@@ -25,10 +29,15 @@ const AlbumSpringWrapper = styled.div`
   height: 100%;
   background-color: ${_mainColBg_Dark};
 margin-right: 0.5rem;
-position: absolute;
 left: -2rem;
+display: flex;
+align-items: center;
+position: absolute;
+padding: 1rem;
 `
-
+const AlbumStringImg = styled.img`
+  height: 95%;
+`
 const Cards = styled.div`
   display: flex;
   justify-content: center;
