@@ -21,13 +21,14 @@ const Logo = styled.div`
 `;
 const LogoFace = styled.img`
   width: 5rem;
+  top: -5rem;
   position: absolute;
 `;
 const LogoText = styled.img`
   position: absolute;
-  size: 12rem;
-  top: -4.5rem;
-  left: 4rem;
+width: 10rem;
+  top: -6rem;
+  left: 6rem;
   display: block;
   margin: auto;
 `;
