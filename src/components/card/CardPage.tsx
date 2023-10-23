@@ -1,22 +1,24 @@
 import styled from '@emotion/styled';
-import Icon from '../common/Icon';
+import PrevBtn from '../../assets/prevBtn.svg';
+import NextBtn from '../../assets/nextBtn.svg';
 
-const IconStyled = styled(Icon)<{ isNext: boolean }>`
+const MoveBtn = styled.img<{ isNext: boolean }>`
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  bottom: 0;
   right: ${({ isNext }) => isNext && 0};
   left: ${({ isNext }) => !isNext && 0};
+  // bottom: -10px;
+  // right: ${({ isNext }) => isNext && `-30px`};
+  // left: ${({ isNext }) => !isNext && `-30px`};
   cursor: pointer;
+  z-index: 1;
 `;
 
 const Next = ({ onClick }: { onClick: () => void }) => {
-  return <IconStyled name="chevron-right" isNext size={96} color="white" onClick={onClick} />;
+  return <MoveBtn src={NextBtn} onClick={onClick} isNext />;
 };
 const Prev = ({ onClick }: { onClick: () => void }) => {
-  return (
-    <IconStyled name="chevron-left" isNext={false} size={96} color="white" onClick={onClick} />
-  );
+  return <MoveBtn src={PrevBtn} onClick={onClick} isNext={false} />;
 };
 
 export const CardPage = { Next, Prev };

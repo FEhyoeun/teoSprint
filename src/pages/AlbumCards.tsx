@@ -9,10 +9,10 @@ export default function AlbumCards() {
   const [currentPage, setCurrentPage] = useState(0); // 계산 편의성을 위해 첫 페이지를 0으로 설정
 
   const { pathname } = useLocation();
-  const [currentUrl, setCurrentUrl] = useState("");
+  const [currentUrl, setCurrentUrl] = useState('');
   useEffect(() => {
-    setCurrentUrl(pathname)
-  }, [pathname])
+    setCurrentUrl(pathname);
+  }, [pathname]);
 
   const nextPage = currentPage + 1;
   const prevPage = currentPage - 1;
