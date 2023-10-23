@@ -58,9 +58,6 @@ const PlayBtn = styled.button<{ image: string }>`
   span {
     font-size: large;
   }
-  &:hover {
-    cursor: pointer;
-  }
 `;
 
 const NavLi = styled.li`
