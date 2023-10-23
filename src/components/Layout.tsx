@@ -5,7 +5,7 @@ import SideNavBar from './navBars/SideNavBar';
 import TopNavBar from './navBars/TopNavBar';
 
 import { _mainHeight, _mainSpringGapWidth, _mainWidth } from '../constants/sizes';
-import { _mainColGreen, _mainColBlue, _mainColOrange, _mainColBg_Dark, _mainColGreen_Dark, _mainColOrange_Dark } from '../constants/colors';
+import { _mainColGreen, _mainColBlue, _mainColOrange, _mainColBg_Dark, _mainColGreen_Dark, _mainColOrange_Dark, _mainColBg_Light } from '../constants/colors';
 import { PATH } from '../constants/path';
 
 import MavoFace from '../assets/charecter/MaVo_Face.svg';
@@ -85,7 +85,7 @@ const AlbumPaper = styled.div<{ pathname: string }>`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: ${props => props.pathname === '/categories' ? 'transparent' : 'white'};
+  background-color: ${props => props.pathname === '/categories' ? 'transparent' : _mainColBg_Light};
   border-radius: 0px 5px 5px 0px;
   box-shadow: ${props => props.pathname === '/categories' ? "none" : '13px 0px 10px -2px rgba(0, 0, 0, 0.4)'};
 `;
