@@ -11,7 +11,7 @@ export default function TopNavBar() {
         <ListWrapper_Album>
           <Link to={`/${PATH.ALBUM}/동물`}>
             <TextBox>
-              <IconImage src='src\assets\album.svg' />
+              <IconImage src="src\assets\album.svg" />
               <Text>앨범</Text>
             </TextBox>
           </Link>
@@ -19,7 +19,7 @@ export default function TopNavBar() {
         <ListWrapper_Category>
           <Link to={`/${PATH.CATEGORIES}`}>
             <TextBox>
-              <IconImage src='src\assets\library.svg' />
+              <IconImage src="src\assets\library.svg" />
               <Text>단어장</Text>
             </TextBox>
           </Link>
@@ -45,19 +45,20 @@ const ListWrapper_Category = styled.div`
   margin-left: 0.5rem;
   border-top-right-radius: 1rem;
   border-top-left-radius: 1rem;
-a{
-  width: inherit;
-  height: inherit;
-  padding: 10px 0;
-  color: ${_mainTextDark};
-  text-decoration: none;
-  font-size: larger;
-  font-weight: 800;
-  text-align: center;
-&:active{
-  color: ${_mainTextDark};
-  text-decoration: none;
-}}
+  a {
+    width: inherit;
+    height: inherit;
+    padding: 10px 0;
+    color: ${_mainTextDark};
+    text-decoration: none;
+    font-size: larger;
+    font-weight: 800;
+    text-align: center;
+    &:active {
+      color: ${_mainTextDark};
+      text-decoration: none;
+    }
+  }
 `;
 
 const ListWrapper_Album = styled(ListWrapper_Category)`
@@ -65,20 +66,20 @@ const ListWrapper_Album = styled(ListWrapper_Category)`
 `;
 
 const TextBox = styled.div`
-width: 100%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.2s  ;
-  &:hover{
+  transition: all 0.2s;
+  &:hover {
     scale: 1.1;
   }
-  `
+`;
 
 const IconImage = styled.img`
   width: 40px;
-  `
+`;
 const Text = styled.span`
   font-size: 30px;
   margin-left: 5px;
-`
+`;

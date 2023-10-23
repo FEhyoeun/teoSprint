@@ -13,7 +13,7 @@ const Container = styled.div`
 
 const Wrapper = styled.div`
   min-width: ${_mainWidth};
-  min-height:${_mainHeight};
+  min-height: ${_mainHeight};
   display: flex;
   justify-content: center;
   align-items: center;

@@ -9,6 +9,24 @@ const Container = styled.div`
   width: 100%;
   height: 100%;
 `;
+const Logo = styled.div`
+  width: 13rem;
+  display: flex;
+  position: relative;
+  align-items: center;
+`;
+const LogoFace = styled.img`
+  width: 5rem;
+  position: absolute;
+`;
+const LogoText = styled.img`
+  position: absolute;
+  size: 12rem;
+  top: -4.5rem;
+  left: 4rem;
+  display: block;
+  margin: auto;
+`;
 const Wrapper = styled.div`
   width: 40%;
   height: 100%;
@@ -16,11 +34,6 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-`;
-const Logo = styled.div`
-  width: 274px;
-  height: 72px;
-  background-color: gray;
 `;
 const ProjectName = styled.div`
   width: 100%;
@@ -34,7 +47,6 @@ const ProfileImage = styled.img`
   border: 1px solid lightgray;
   border-radius: 50%;
   margin: 25px 0;
-  /* background-image: url('src/assets/face.svg'); */
   background-size: 80% 80%;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -80,7 +92,10 @@ const Profile = () => {
 
   return (
     <Container>
-      <Logo />
+      <Logo>
+        <LogoFace src="src\assets\charecter\MaVo_Face.svg" />
+        <LogoText src="src\assets\charecter\MaVo_Logo.svg" height={100} />
+      </Logo>
       <Wrapper>
         <ProjectName>프로필</ProjectName>
         <ProfileModal onImgSelect={handleSelect}>
