@@ -169,7 +169,7 @@ export const CardModal = ({ children, name }: { children: React.ReactNode; name:
             </DialogClose>
           </StyledButtonWrapper>
 
-          <StyledCardImg alt={card?.name} src={`/${card?.img}`} />
+          <StyledCardImg alt={card?.name} src={`${card?.img}`} />
 
           <StyledPrevButton onClick={handlePrevClick}>이전 버튼</StyledPrevButton>
           <StyledNextButton onClick={handleNextClick}>다음 버튼</StyledNextButton>

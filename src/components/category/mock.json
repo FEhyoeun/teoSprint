@@ -3,50 +3,50 @@
     {
       "index": 0,
       "categoryName": "동물",
-      "iconUrl": "src/assets/category/icons/animalIcon.svg",
-      "imgUrl": "src/assets/category/animal.svg"
+      "iconUrl": "/assets/category/icons/animalIcon.svg",
+      "imgUrl": "/assets/category/animal.svg"
     },
     {
       "index": 1,
       "categoryName": "사물",
-            "iconUrl": "src/assets/category/icons/objectIcon.svg",
-      "imgUrl": "src/assets/category/object.svg"
+      "iconUrl": "/assets/category/icons/objectIcon.svg",
+      "imgUrl": "/assets/category/object.svg"
     },
     {
       "index": 2,
       "categoryName": "가족",
-      "iconUrl": "src/assets/category/icons/familyIcon.svg",
-      "imgUrl": "src/assets/category/family.svg"
+      "iconUrl": "/assets/category/icons/familyIcon.svg",
+      "imgUrl": "/assets/category/family.svg"
     },
     {
       "index": 3,
       "categoryName": "색깔",
-      "iconUrl": "src/assets/category/icons/colorsIcon.svg",
-      "imgUrl": "src/assets/category/colors.svg"
+      "iconUrl": "/assets/category/icons/colorsIcon.svg",
+      "imgUrl": "/assets/category/colors.svg"
     },
     {
       "index": 4,
       "categoryName": "감정",
-      "iconUrl": "src/assets/category/icons/emotionIcon.svg",
-      "imgUrl": "src/assets/category/emotion.svg"
+      "iconUrl": "/assets/category/icons/emotionIcon.svg",
+      "imgUrl": "/assets/category/emotion.svg"
     },
     {
       "index": 5,
       "categoryName": "날씨",
-      "iconUrl": "src/assets/category/icons/weatherIcon.svg",
-      "imgUrl": "src/assets/category/weather.svg"
+      "iconUrl": "/assets/category/icons/weatherIcon.svg",
+      "imgUrl": "/assets/category/weather.svg"
     },
     {
       "index": 6,
       "categoryName": "숫자",
-      "iconUrl": "src/assets/category/icons/numberIcon.svg",
-      "imgUrl": "src/assets/category/number.svg"
+      "iconUrl": "/assets/category/icons/numberIcon.svg",
+      "imgUrl": "/assets/category/number.svg"
     },
     {
       "index": 7,
       "categoryName": "음식",
-      "iconUrl": "src/assets/category/icons/foodIcon.svg",
-      "imgUrl": "src/assets/category/food.svg"
+      "iconUrl": "/assets/category/icons/foodIcon.svg",
+      "imgUrl": "/assets/category/food.svg"
     }
   ]
 }

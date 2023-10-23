@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import styled from '@emotion/styled';
 import { _mainCol300, _mainCol400, _mainTextDark } from '../../constants/colors';
 import { PATH } from '../../constants/path';
+import Album from '../../assets/album.svg';
+import Library from '../../assets/album.svg';
 
 export default function TopNavBar() {
   return (
@@ -11,7 +13,7 @@ export default function TopNavBar() {
         <ListWrapper_Album>
           <Link to={`/${PATH.ALBUM}/동물`}>
             <TextBox>
-              <IconImage src="src\assets\album.svg" />
+              <IconImage src={Album} />
               <Text>앨범</Text>
             </TextBox>
           </Link>
@@ -19,7 +21,7 @@ export default function TopNavBar() {
         <ListWrapper_Category>
           <Link to={`/${PATH.CATEGORIES}`}>
             <TextBox>
-              <IconImage src="src\assets\library.svg" />
+              <IconImage src={Library} />
               <Text>단어장</Text>
             </TextBox>
           </Link>

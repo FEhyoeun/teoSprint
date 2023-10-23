@@ -85,8 +85,8 @@ export const ProfileModal = ({
               <DialogClose key={num} asChild>
                 <input
                   type="image"
-                  onClick={() => handleProfileClick(`/src/assets/profile/profile_${num}.svg`)}
-                  src={`/src/assets/profile/profile_${num}.svg`}
+                  onClick={() => handleProfileClick(`/assets/profile/profile_${num}.svg`)}
+                  src={`/assets/profile/profile_${num}.svg`}
                   alt={`profile_${num}`}
                   width="169px"
                   height="169px"

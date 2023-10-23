@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import styled from '@emotion/styled';
 import { useNavigate } from 'react-router-dom';
+import MavoFace from '../assets/charecter/MaVo_Face.svg';
+import MavoLogo from '../assets/charecter/MaVo_Logo.svg';
+import Face from '../assets/face.svg';
 
 import { PATH } from '../constants/path';
 import { ProfileModal } from '../components/profileModal/ProfileModal';
@@ -74,7 +77,7 @@ const SubmitBtn = styled.button`
 
 const Profile = () => {
   const [name, setName] = useState<string>('');
-  const [profileImg, setProfileImg] = useState('src/assets/face.svg');
+  const [profileImg, setProfileImg] = useState(Face);
   const navigate = useNavigate();
 
   const handleSubmit = (e: React.MouseEvent) => {
@@ -93,8 +96,8 @@ const Profile = () => {
   return (
     <Container>
       <Logo>
-        <LogoFace src="src\assets\charecter\MaVo_Face.svg" />
-        <LogoText src="src\assets\charecter\MaVo_Logo.svg" height={100} />
+        <LogoFace src={MavoFace} />
+        <LogoText src={MavoLogo} height={100} />
       </Logo>
       <Wrapper>
         <ProjectName>프로필</ProjectName>
