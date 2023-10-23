@@ -44,16 +44,24 @@ export default function AlbumCards() {
   );
 }
 
+// const CardsWrapper = styled.div`
+//   position: relative;
+//   width: 100%;
+//   height: 100%;
+//   display: flex;
+//   flex-wrap: wrap;
+//   justify-content: center;
+//   align-items: center;
+//   gap: 20px;
+//   overflow: hidden;
+// `;
+
 const CardsWrapper = styled.div`
-  position: relative;
   width: 100%;
   height: 100%;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  overflow: hidden;
 `;
 
 const CardBag = styled.div<{ url: string }>`
