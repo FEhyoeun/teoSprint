@@ -37,8 +37,8 @@ export const router = createBrowserRouter([
             children: [
               {
                 path: `/${PATH.ALBUM}/:category`,
-                element: <AlbumCards />
-              }
+                element: <AlbumCards />,
+              },
             ],
           },
         ],

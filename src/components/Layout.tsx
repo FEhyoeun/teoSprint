@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { Link, Outlet, useLocation } from 'react-router-dom';
+import { Outlet, useLocation } from 'react-router-dom';
 
 import SideNavBar from './navBars/SideNavBar';
 import TopNavBar from './navBars/TopNavBar';
@@ -16,8 +16,8 @@ export const Layout = () => {
     <MainWrapper>
       <Header>
         <Logo>
-          <LogoFace src='src\assets\charecter\MaVo_Face.svg' />
-          <LogoText src='src\assets\charecter\MaVo_Logo.svg' />
+          <LogoFace src="src\assets\charecter\MaVo_Face.svg" />
+          <LogoText src="src\assets\charecter\MaVo_Logo.svg" />
         </Logo>
         <TopNavBar />
       </Header>
@@ -59,10 +59,10 @@ const SideSection = styled.section`
 `;
 
 const Logo = styled.div`
-width: 13rem;
-display: flex;
-position: relative;
-`
+  width: 13rem;
+  display: flex;
+  position: relative;
+`;
 
 const OutletWrapper = styled.section<{ param: string }>`
   grid-column: 1/2;
@@ -73,11 +73,11 @@ const OutletWrapper = styled.section<{ param: string }>`
 const LogoFace = styled.img`
   width: 5rem;
   position: absolute;
-top: -0.5rem;
-`
+  top: -0.5rem;
+`;
 const LogoText = styled.img`
   width: 10rem;
   position: absolute;
-top: -2.5rem;
-left: 4rem;
-`
+  top: -2.5rem;
+  left: 4rem;
+`;
